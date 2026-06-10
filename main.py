@@ -15,6 +15,12 @@ USERNAME = "aleabitoreddit"
 BASE_DOMAIN = "https://nitter.net"
 NITTER_URL = f"{BASE_DOMAIN}/{USERNAME}"
 
+# ========== Bark 推送配置（自行修改这里） ==========
+BARK_KEY = "6mpwELpQAdrgyRPAAXJQWG"  # 你的专属密钥
+BARK_TITLE = "推文更新提醒"             # 自定义推送标题
+BARK_GROUP = "推文监控"                # 推送分组（手机端会分类）
+# ================================================
+
 proxies = {"http": PROXY, "https": PROXY} if PROXY else None
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -30,11 +36,38 @@ MAX_RETRY = 3
 RETRY_DELAY = 3
 MAX_EMPTY_PAGE = 3
 
+# 全局变量：保存本轮最新一条推文
+latest_new_tweet = None
+
 # ===================== 日志函数 =====================
 def log(msg):
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_msg = f"[{now}] {msg}"
     print(log_msg)
+
+# ===================== Bark 推送函数（支持自定义标题/内容/分组） =====================
+def bark_push(title, body):
+    """
+    发送Bark推送
+    :param title: 推送标题
+    :param body: 推送正文
+    """
+    if not BARK_KEY:
+        log("⚠️ 未配置Bark密钥，跳过推送")
+        return
+    # 拼接完整推送链接
+    base_url = f"https://api.day.app/{BARK_KEY}/{title}/{body}"
+    if BARK_GROUP:
+        base_url += f"?group={BARK_GROUP}"
+    try:
+        # 限制超时，防止卡住
+        resp = requests.get(base_url, timeout=10)
+        if resp.status_code == 200:
+            log("✅ Bark 推送发送成功")
+        else:
+            log(f"⚠️ Bark 推送请求异常，状态码：{resp.status_code}")
+    except Exception as e:
+        log(f"❌ Bark 推送失败：{str(e)}")
 
 # ===================== 工具函数 =====================
 def save_text(path, content):
@@ -65,7 +98,7 @@ def fetch_url(url):
         except Exception as e:
             retry += 1
             log(f"⚠️ 请求失败，{RETRY_DELAY}秒后重试 {retry}/{MAX_RETRY}")
-            time.sleep(RETRY_DELAY)
+            time.sleep(RETRY)
     return None
 
 # ===================== 解析推文 =====================
@@ -78,7 +111,8 @@ def parse_tweet(tweet_div):
         "retweet": "0",
         "like": "0",
         "view": "0",
-        "imgs": []
+        "imgs": [],
+        "tid": ""
     }
     time_elem = tweet_div.find("span", class_="tweet-date")
     if time_elem:
@@ -103,6 +137,12 @@ def parse_tweet(tweet_div):
         href = a.get("href")
         if href:
             data["imgs"].append(BASE_DOMAIN + href)
+
+    id_a = tweet_div.find("a", href=re.compile(r"/status/\d+"))
+    if id_a:
+        match = re.search(r"(\d+)", id_a["href"])
+        if match:
+            data["tid"] = match.group(1)
     return data
 
 # ===================== 目录命名：仅日期 =====================
@@ -124,23 +164,16 @@ def make_folder_name(tweet_time_str, tweet_id):
             pass
 
     date_only = target_dt.strftime("%Y-%m-%d")
-    folder_name = f"{date_only}_{tweet_id}"
-    return folder_name
+    return f"{date_only}_{tweet_id}"
 
 # ===================== 单条处理 =====================
 def process_single_item(item):
+    global latest_new_tweet
     tw = parse_tweet(item)
-    if len(tw["content"]) < MIN_CONTENT_LENGTH:
+    if len(tw["content"]) < MIN_CONTENT_LENGTH or not tw["tid"]:
         return "empty"
 
-    id_a = item.find("a", href=re.compile(r"/status/\d+"))
-    if not id_a:
-        return "empty"
-    match = re.search(r"(\d+)", id_a["href"])
-    if not match:
-        return "empty"
-    tid = match.group(1)
-
+    tid = tw["tid"]
     folder_name = make_folder_name(tw["time_raw"], tid)
     folder_path = os.path.join(BASE_DIR, folder_name)
 
@@ -149,7 +182,7 @@ def process_single_item(item):
 
     os.makedirs(folder_path, exist_ok=True)
     txt_path = os.path.join(folder_path, "推文内容.txt")
-    txt_content = f"""发布时间：{tw['time_raw']}
+    txt_content = f"""发布时间：{tw['time']}
 正文：{tw['content']}
 引用：{tw['quote']}
 评论：{tw['comment']} 转发：{tw['retweet']} 点赞：{tw['like']} 浏览：{tw['view']}
@@ -160,10 +193,17 @@ def process_single_item(item):
         img_path = os.path.join(folder_path, f"图片_{idx+1}.jpg")
         download_img(img_url, img_path)
 
+    # 记录最新推文
+    latest_new_tweet = {
+        "time": tw["time_raw"],
+        "content": tw["content"]
+    }
     return "success"
 
 # ===================== 主抓取逻辑 =====================
 def get_all_tweets():
+    global latest_new_tweet
+    latest_new_tweet = None
     log(f"🚀 开始抓取: {NITTER_URL}")
     current_url = NITTER_URL
     total_new = 0
@@ -175,7 +215,7 @@ def get_all_tweets():
         log(f"\n📄 访问页面: {current_url}")
         resp = fetch_url(current_url)
         if not resp:
-            log("❌ 页面失败")
+            log("❌ 页面请求失败")
             break
 
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -197,10 +237,8 @@ def get_all_tweets():
                     page_new += 1
                 elif res == "exists":
                     total_skip += 1
-                    page_skip += 1
                 elif res == "empty":
                     empty_skip += 1
-                    page_empty += 1
 
         log(f"本页：新增 {page_new} | 重复 {page_skip} | 空 {page_empty}")
         if page_new == 0:
@@ -225,6 +263,11 @@ def get_all_tweets():
         time.sleep(1)
 
     log(f"\n🎉 本轮结束：新增 {total_new} 条")
+
+    # 有新推文则推送，正文截断200字符防止超长
+    if latest_new_tweet:
+        push_body = f"发布时间：{latest_new_tweet['time']}\n{latest_new_tweet['content'][:200]}"
+        bark_push(BARK_TITLE, push_body)
 
 # ===================== 主入口 =====================
 if __name__ == "__main__":
