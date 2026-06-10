@@ -29,6 +29,8 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run script
+        env:
+          BARK_KEY: ${{ secrets.BARK_KEY }}
         run: python main.py
 
       - name: Commit and push
