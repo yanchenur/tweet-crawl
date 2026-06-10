@@ -15,6 +15,10 @@ USERNAME = "aleabitoreddit"
 BASE_DOMAIN = "https://nitter.net"
 NITTER_URL = f"{BASE_DOMAIN}/{USERNAME}"
 
+# 从环境变量读取 Bark 密钥，不再硬编码
+BARK_KEY = os.getenv("BARK_KEY", "")
+BARK_URL = f"https://api.day.app/{BARK_KEY}" if BARK_KEY else ""
+
 proxies = {"http": PROXY, "https": PROXY} if PROXY else None
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -35,6 +39,22 @@ def log(msg):
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_msg = f"[{now}] {msg}"
     print(log_msg)
+
+# ===================== Bark 推送函数（无密钥则静默跳过） =====================
+def bark_notify(title, body):
+    # 没有密钥直接不推送，避免报错
+    if not BARK_KEY:
+        log("ℹ️ 未配置 BARK_KEY，跳过推送")
+        return
+    try:
+        payload = {
+            "title": title,
+            "body": body,
+            "sound": "default"
+        }
+        requests.post(BARK_URL, json=payload, timeout=10)
+    except Exception as e:
+        log(f"⚠️ Bark 推送异常: {str(e)[:30]}")
 
 # ===================== 工具函数 =====================
 def save_text(path, content):
@@ -131,21 +151,21 @@ def make_folder_name(tweet_time_str, tweet_id):
 def process_single_item(item):
     tw = parse_tweet(item)
     if len(tw["content"]) < MIN_CONTENT_LENGTH:
-        return "empty"
+        return "empty", tw
 
     id_a = item.find("a", href=re.compile(r"/status/\d+"))
     if not id_a:
-        return "empty"
+        return "empty", tw
     match = re.search(r"(\d+)", id_a["href"])
     if not match:
-        return "empty"
+        return "empty", tw
     tid = match.group(1)
 
     folder_name = make_folder_name(tw["time_raw"], tid)
     folder_path = os.path.join(BASE_DIR, folder_name)
 
     if os.path.exists(folder_path):
-        return "exists"
+        return "exists", tw
 
     os.makedirs(folder_path, exist_ok=True)
     txt_path = os.path.join(folder_path, "推文内容.txt")
@@ -160,7 +180,7 @@ def process_single_item(item):
         img_path = os.path.join(folder_path, f"图片_{idx+1}.jpg")
         download_img(img_url, img_path)
 
-    return "success"
+    return "success", tw
 
 # ===================== 主抓取逻辑 =====================
 def get_all_tweets():
@@ -187,14 +207,16 @@ def get_all_tweets():
         page_new = 0
         page_skip = 0
         page_empty = 0
+        new_tweet_contents = []  # 收集本页新增推文用于推送
 
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = [executor.submit(process_single_item, item) for item in items]
             for future in as_completed(futures):
-                res = future.result()
+                res, tw_info = future.result()
                 if res == "success":
                     total_new += 1
                     page_new += 1
+                    new_tweet_contents.append(f"【{tw_info['time_raw']}】\n{tw_info['content']}")
                 elif res == "exists":
                     total_skip += 1
                     page_skip += 1
@@ -203,6 +225,16 @@ def get_all_tweets():
                     page_empty += 1
 
         log(f"本页：新增 {page_new} | 重复 {page_skip} | 空 {page_empty}")
+
+        # 有新内容则推送 Bark
+        if page_new > 0:
+            bark_title = f"📢 GitHub Actions 抓取到 {page_new} 条新推文"
+            bark_body = "\n\n".join(new_tweet_contents)
+            # 超长截断，避免推送失败
+            if len(bark_body) > 1500:
+                bark_body = bark_body[:1500] + "\n...(内容过长已截断)"
+            bark_notify(bark_title, bark_body)
+
         if page_new == 0:
             consecutive_empty_page += 1
             if consecutive_empty_page >= MAX_EMPTY_PAGE:
@@ -229,4 +261,4 @@ def get_all_tweets():
 # ===================== 主入口 =====================
 if __name__ == "__main__":
     os.makedirs(BASE_DIR, exist_ok=True)
-    get_all_tweets() 
+    get_all_tweets()
