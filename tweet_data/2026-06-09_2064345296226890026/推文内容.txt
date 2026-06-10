@@ -1,0 +1,40 @@
+发布时间：Jun 9
+正文：$EWY 32% IV into 58% IV expansion trade.
+
+Into underlying SK Hynix / Samsung increase way ITM.
+
+Was such a goated call? (~383% return)
+
+Had way too many great ideas this year… 
+
+Still super proud of predicting South Korea index volatility increase due to memory concentration
+引用：Trade idea that I published to my shower thoughts channel: 
+
+Korean Index volatility arbitrage and taking advantage of Black-Scholes models.$EWYlong options seem mispriced.
+
+This is Blackrock's Korea Index, which is majority memory (Samsung Electronics, Sk Hynix).
+
+The stock swings 2-5+% a day, and is up 136.25% 1Y, despite priced like a normal index IV.
+
+Samsung is volatile. SK Hynix is volatile (eg. 65% - 80% est). 
+
+But the combination of the two through the index is priced way less than both low beta$GOOGL(37.33%) and$AMZN(39.12%) at ~32% IV. 
+
+I've been watching$EWYfor a bit and it does look volatile. 
+
+As for pricing my guess is MMs priced in IV based on historical averages (5-10 years), where the Korean index was completely flat. And were expecting calls 2 years out to revert to the mean. 
+
+But this volatility should be the new norm as markets price in the new memory supercycle (eg.$TSMwent from 30% IV to 46.2% IV). 
+
+Long calls should benefit from both Samsung + Sk Hynix carrying the index. 
+
+And the main benefit is vega expansion that you won't get from$KORU. 
+
+You also can't get this option MM pinning like individual US stocks since this is Korea's national index and long term. 
+
+TLDR: Individual components SK Hynix + Samsung are highly volatile.
+
+They're basically half of the index, but options in index are priced with low volatility, perhaps due to historical 5-10 year data.  
+
+Long calls benefit from vega expansion that weren't priced in correctly as MM forward vol estimates are anchored too heavily on historical realized vol, which was low for$EWYover the past 5-10 years
+评论：193 转发：41 点赞：766 浏览：
