@@ -1,8 +1,8 @@
 name: 推文获取
-on:
+于:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"  # UTC 每30分钟执行，免费账号稳定，不易限流
+    - cron: "*/30 * * * *"  # UTC 每30分钟执行，免费账号稳定，不易限流
 
 jobs:
   run:
