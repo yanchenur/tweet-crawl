@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
 推文PDF生成器 GitHub Actions 专用版
-内置自动下载中文字体，解决中文方块乱码
+使用Ubuntu系统预装中文字体，无需网络下载，彻底解决链接失效问题
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
 import os
 import sys
 import re
-import requests
 from datetime import datetime
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
@@ -26,44 +25,33 @@ from reportlab.pdfbase.ttfonts import TTFont
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TWEET_DATA_DIR = os.path.join(BASE_DIR, "tweet_data")
 REPORTS_DIR = os.path.join(BASE_DIR, "pdf_output")
-FONT_CACHE_DIR = os.path.join(BASE_DIR, "font_cache")
 os.makedirs(REPORTS_DIR, exist_ok=True)
-os.makedirs(FONT_CACHE_DIR, exist_ok=True)
 
 # 输出文件（固定，覆盖旧文件）
 DEFAULT_OUTPUT = os.path.join(REPORTS_DIR, "推文合集.pdf")
-# 中文字体路径 & 下载地址
-FONT_NAME = "NotoSansSC"
-FONT_FILE = "NotoSansCJK-Regular.ttc"
-FONT_PATH = os.path.join(FONT_CACHE_DIR, FONT_FILE)
-FONT_DOWNLOAD_URL = "https://github.com/googlefonts/noto-cjk/raw/main/Sans/TTF/NotoSansCJK-Regular.ttc"
 
-# ===================== 自动下载 & 注册中文字体 =====================
-def init_chinese_font():
-    # 字体不存在则下载
-    if not os.path.exists(FONT_PATH):
-        print("正在下载中文字体...")
+# ===================== 注册Ubuntu系统内置中文字体（文泉驿微米黑） =====================
+# GitHub Actions Ubuntu 固定字体路径，无需下载
+FONT_PATH = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
+FONT_NAME = "WQYMicrohei"
+use_font = "Helvetica"
+
+def init_system_font():
+    """加载系统预装中文字体"""
+    global use_font
+    if os.path.exists(FONT_PATH):
         try:
-            resp = requests.get(FONT_DOWNLOAD_URL, timeout=30)
-            resp.raise_for_status()
-            with open(FONT_PATH, "wb") as f:
-                f.write(resp.content)
-            print("字体下载完成")
+            pdfmetrics.registerFont(TTFont(FONT_NAME, FONT_PATH))
+            use_font = FONT_NAME
+            print(f"✅ 成功加载系统中文字体: {FONT_PATH}")
+            return True
         except Exception as e:
-            print(f"字体下载失败: {e}")
-            return False
-    # 注册字体
-    try:
-        pdfmetrics.registerFont(TTFont(FONT_NAME, FONT_PATH))
-        print(f"中文字体 {FONT_NAME} 注册成功")
-        return True
-    except Exception as e:
-        print(f"字体注册失败: {e}")
-        return False
+            print(f"⚠️ 字体注册失败: {e}")
+    print("⚠️ 未找到系统中文字体，将使用默认英文字体")
+    return False
 
 # 初始化字体
-font_ok = init_chinese_font()
-use_font = FONT_NAME if font_ok else "Helvetica"
+init_system_font()
 
 # ===================== 配色方案 =====================
 COLOR_PRIMARY = HexColor("#1a1a2e")
@@ -239,7 +227,7 @@ class ColorBar(Flowable):
         Flowable.__init__(self)
         self.width = width
         self.height = height
-        self.color = color
+        self.color
     def draw(self):
         self.canv.setFillColor(self.color)
         self.canv.rect(0, 0, self.width, self.height, fill=1, stroke=0)
@@ -421,7 +409,7 @@ def build_tweet_pages(story, tweets):
                     textColor=HexColor("#e74c3c"), leading=12
                 )
                 story.append(Paragraph(f"[图片加载失败] {str(e)}", err_style))
-                story.append(Spacer(1, 2 * mm))
+                story.append(Spacer(1, 4 * mm))
 
         story.append(Spacer(1, 4 * mm))
         story.append(HRFlowable(
