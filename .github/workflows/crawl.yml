@@ -1,7 +1,9 @@
 name: 自动抓取推文
+
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 支持手动点击运行
   schedule:
+    # 北京时间每30分钟执行（对应UTC的 */30 * * * *，设置时区后会按北京时间跑）
     - cron: "*/30 * * * *"
 
 jobs:
@@ -9,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Pull latest code
+      # 关键：设置系统时区为东八区（北京时间）
+      - name: Set timezone to Asia/Shanghai
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase
+          sudo timedatectl set-timezone Asia/Shanghai
+          echo "TZ=Asia/Shanghai" >> $GITHUB_ENV
 
-      - name: Set up Python
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -28,13 +30,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Run script
+      - name: Run crawl script
         env:
           BARK_KEY: ${{ secrets.BARK_KEY }}
         run: python main.py
 
-      - name: Commit and push
+      - name: Commit & Push changes
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Auto update tweets" || exit 0
-          git push origin main
+          # 即使没有文件变更也不报错
+          git commit -m "Auto update tweets" || true
+          git push
