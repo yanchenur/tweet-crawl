@@ -1,0 +1,49 @@
+发布时间：1m
+正文：Just some reflection, my core high conviction ideas from 2025 aged super well!
+
+From $ALAB : $97-> $372 $LITE : $330 -> $904 $AAOI : $30 -> $175
+
+And others like $NBIS , $RKLB , and $TSM !
+
+This was back when I had close to no followers! 
+
+I got some nuances slightly off before more information was made public. Lost conviction on ALAB along the way with optical transitions.
+
+But this was back when AAOI and others were small $3B companies (~$14B now).
+
+So maybe some others in the same range today like $SIVE should get some more attention?
+
+But I’m happy a lot of them aged super well. 
+
+And I think a large part of my recent following growth is just other seeing my ideas like $AXTI get validated over time.
+引用：I entered$ALAB,$NBIS,$TSM, and$LITEbecause of Mag7 funneling revenue numbers into them.
+
+Lite uniquely because of its role in GOOGL TPU v7, AMZN Trainium v3/4, and NVDA Blackwell.
+
+But there's a new one I found out about.
+
+A small cap <$3B player that fits the thesis:
+
+Name -$AAOIA small cap photonics player, and one of the two photonics players I'm invested in: 
+
+1. Lumentum is uniquely positioned in every single supply chip deployment/ramp, as the Optical Circuit Switching  technology is used in Blackwell, Trainium, and Ironwood as a "scale-across" type technology.$LITEwins no matter what. Hyperscaler ASIC vs. GPU as it's in the center of it all.  
+
+2. Applied Optoelectronics is more of the "scale-out" connectivity, for custom ASIC clusters like Trainium, Maia through 400G and 800G optical cables and transceivers.$AAOIwins no matter what as well given its role with AWS as a whale client for Trainium, and with MSFT Maia ASICs.
+
+The industry is going through a "supercycle" driven by the migration to 800G speeds and AAOI is in the center of it. 
+
+On top of that, AAOI plays unique geopolitical angle,  
+America first. 
+
+Unlike many other companies that are fabless and export production elsewhere to Taiwan, Applied Optoelectronics makes their own lasers in Texas.
+
+US hyperscalers (specifically Amazon and Microsoft) are aggressively reducing reliance on Chinese supply  chains for critical infrastructure and that helps AAOI’s ability to manufacture lasers at home. 
+
+And we've seen another huge volume order from a  "major hyperscaler" on its 800G data center transceivers.  
+
+But AAOI trades like a distressed company; however, the implied revenue of its Amazon warrant agreement creates an asymmetric risk/reward profile on its 800G ramp in Q4 2025 and FY2026. AAOI seems structurally undervalued, given its role in the AI buildout and existing hyperscaler contracts.  
+
+The markets are finally catching up to LITE, but it feels$AAOIis yet to begin, given its small market cap size but unique angle of a critical player to hyperscaler ASIC clusters and Made in America. 
+
+The market is currently re-rating heavily with photonics players and assigning a heavy premium, yet AAOI is only up 2.20% this year and seems like it's just about to begin.
+评论：16 转发：2 点赞：36 浏览：
