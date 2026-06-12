@@ -27,7 +27,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 仅保留PDF必需依赖，移除requests
       - name: Install dependencies
         run: |
           pip install reportlab pillow
