@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 推文PDF生成器 GitHub Actions 专用版
-使用仓库内本地 .ttf 字体，兼容ReportLab
+带完整调试日志，适配本地TTF字体
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
@@ -23,7 +23,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # ===================== 路径配置 =====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# 改为 .ttf 字体
+# 本地TTF字体路径（已适配wqy-microhei.ttf）
 FONT_FILE = os.path.join(BASE_DIR, "fonts", "wqy-microhei.ttf")
 TWEET_DATA_DIR = os.path.join(BASE_DIR, "tweet_data")
 REPORTS_DIR = os.path.join(BASE_DIR, "pdf_output")
@@ -39,7 +39,9 @@ use_font = "Helvetica"
 def load_local_font():
     """加载仓库内本地中文字体"""
     global use_font
+    print("\n[调试] 字体路径:", FONT_FILE)
     if os.path.exists(FONT_FILE):
+        print("[调试] 字体文件存在，尝试注册...")
         try:
             pdfmetrics.registerFont(TTFont(FONT_NAME, FONT_FILE))
             use_font = FONT_NAME
@@ -47,6 +49,8 @@ def load_local_font():
             return True
         except Exception as e:
             print(f"⚠️ 字体注册失败: {e}")
+    else:
+        print("[调试] 字体文件不存在！")
     print("⚠️ 未找到本地字体，将使用默认英文字体")
     return False
 
@@ -111,17 +115,26 @@ def convert_relative_date(date_str, dir_name=""):
 
 
 def parse_tweet_text(txt_path, dir_name=""):
+    print(f"[调试] 解析文件: {txt_path}")
     if not os.path.exists(txt_path):
+        print(f"[调试] 文件不存在: {txt_path}")
         return None
     try:
         with open(txt_path, "r", encoding="utf-8") as f:
             content = f.read()
+        print(f"[调试] 文件读取成功，内容长度: {len(content)}")
     except UnicodeDecodeError:
+        print("[调试] UTF-8解码失败，尝试GBK...")
         try:
             with open(txt_path, "r", encoding="gbk") as f:
                 content = f.read()
-        except Exception:
+            print(f"[调试] GBK解码成功，内容长度: {len(content)}")
+        except Exception as e:
+            print(f"[调试] 文件读取失败: {e}")
             return None
+    except Exception as e:
+        print(f"[调试] 文件读取异常: {e}")
+        return None
 
     data = {
         "date": "",
@@ -173,46 +186,83 @@ def parse_tweet_text(txt_path, dir_name=""):
                 pass
         elif line.startswith("浏览：") or line.startswith("浏览:"):
             data["views"] = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+
+    print(f"[调试] 解析结果: date={data['date']}, text长度={len(data['text'])}, quote长度={len(data['quote'])}")
     return data
 
 
 def scan_tweet_dirs():
+    print("\n" + "="*60)
+    print("[调试] 开始扫描推文目录...")
+    print(f"[调试] 目录路径: {TWEET_DATA_DIR}")
     if not os.path.exists(TWEET_DATA_DIR):
+        print("[调试] 目录不存在！")
         return []
-    dirs = sorted([
+    
+    # 1. 列出所有文件夹（排除_开头）
+    all_dirs = sorted([
         d for d in os.listdir(TWEET_DATA_DIR)
         if os.path.isdir(os.path.join(TWEET_DATA_DIR, d)) and not d.startswith("_")
-    ])
+    ], reverse=True)
+    print(f"[调试] 扫描到的所有文件夹（共{len(all_dirs)}个）:")
+    for idx, d in enumerate(all_dirs, 1):
+        print(f"  {idx:2d}. {d}")
+
+    # 2. 去重逻辑（按tweet_id保留最新日期）
     seen = {}
-    for d in dirs:
+    for d in all_dirs:
         parts = d.split("_")
         if len(parts) >= 2:
-            tweet_id = parts[1]
             date_str = parts[0]
+            tweet_id = parts[1]
         else:
-            tweet_id = d
             date_str = ""
+            tweet_id = d
+        
+        print(f"[调试] 处理文件夹: {d} | ID: {tweet_id} | 日期: {date_str}")
         if tweet_id in seen:
-            if date_str > seen[tweet_id]["dir_name"].split("_")[0]:
+            old_date = seen[tweet_id]["dir_name"].split("_")[0]
+            if date_str > old_date:
+                print(f"[调试] 发现更新版本，替换旧记录（旧日期: {old_date} → 新日期: {date_str}）")
                 seen[tweet_id] = {"dir_name": d, "date": date_str, "id": tweet_id}
+            else:
+                print(f"[调试] 已存在更新版本，跳过（旧日期: {old_date} ≥ 新日期: {date_str}）")
         else:
+            print(f"[调试] 新ID，添加记录")
             seen[tweet_id] = {"dir_name": d, "date": date_str, "id": tweet_id}
+
+    # 3. 打印去重结果
+    print(f"\n[调试] 去重后保留的文件夹（共{len(seen)}个）:")
+    sorted_seen = sorted(seen.values(), key=lambda x: x["date"], reverse=True)
+    for idx, item in enumerate(sorted_seen, 1):
+        print(f"  {idx:2d}. {item['dir_name']} | ID: {item['id']} | 日期: {item['date']}")
+
+    # 4. 解析有效推文
     tweets = []
-    for tweet_id, info in sorted(seen.items(), key=lambda x: x[1]["date"], reverse=True):
-        dir_path = os.path.join(TWEET_DATA_DIR, info["dir_name"])
+    print("\n[调试] 开始解析有效推文...")
+    for item in sorted_seen:
+        dir_path = os.path.join(TWEET_DATA_DIR, item["dir_name"])
         txt_path = os.path.join(dir_path, "推文内容.txt")
         images = sorted([
             os.path.join(dir_path, f)
             for f in os.listdir(dir_path)
             if f.endswith((".jpg", ".jpeg", ".png", ".gif")) and f.startswith("图片_")
         ])
-        tweet_data = parse_tweet_text(txt_path, dir_name=info["dir_name"])
+        print(f"[调试] 文件夹内图片数量: {len(images)}")
+        
+        tweet_data = parse_tweet_text(txt_path, dir_name=item["dir_name"])
         if tweet_data:
-            tweet_data["id"] = tweet_id
-            tweet_data["dir_name"] = info["dir_name"]
+            tweet_data["id"] = item["id"]
+            tweet_data["dir_name"] = item["dir_name"]
             tweet_data["images"] = images
             tweet_data["dir_path"] = dir_path
             tweets.append(tweet_data)
+            print(f"[调试] 推文添加成功，当前总数: {len(tweets)}")
+        else:
+            print(f"[调试] 推文解析失败，跳过")
+
+    print(f"\n✅ 最终有效推文总数: {len(tweets)}")
+    print("="*60 + "\n")
     return tweets
 
 
@@ -357,7 +407,7 @@ def build_tweet_pages(story, tweets):
             safe_text = safe_text.replace(emoji, text)
         safe_text = re.sub(r"[\U0001f000-\U0001ffff]", "", safe_text)
         safe_text = re.sub(r"#([a-zA-Z]\w*)", r'<font color="#0984e3"><b>#\1</b></font>', safe_text)
-        safe_text = re.sub(r"\$([A-Z]{1,6}(?:\.[A-Z])?)", r'<font color="#e94560"><b>$\1</b></font>', safe_text)
+        safe_text = re.sub(r"\$([A-Z]{1,6}(?:\.[A-Z])?)", r'<font color="#e94560"><b>\$\1</b></font>', safe_text)
         safe_text = safe_text.replace("\n", "<br/>")
 
         if safe_text.strip():
@@ -443,22 +493,20 @@ def main():
     args = parser.parse_args()
 
     print("=" * 60)
-    print("  推文PDF生成器 (GitHub Actions 版)")
+    print("  推文PDF生成器 (GitHub Actions 版 - 带调试日志)")
     print("=" * 60)
 
-    print("\n[1/3] 扫描本地推文数据...")
     tweets = scan_tweet_dirs()
-    print(f"去重后推文总数: {len(tweets)}")
     if not tweets:
         print("[提示] 未找到任何推文数据，程序退出")
         sys.exit(0)
 
     if args.limit > 0:
         tweets = tweets[:args.limit]
-        print(f"限制处理前 {args.limit} 条")
+        print(f"[调试] 限制处理前 {args.limit} 条")
 
     total_imgs = sum(len(t.get("images", [])) for t in tweets)
-    print(f"配图总数: {total_imgs}")
+    print(f"[调试] 最终处理推文数: {len(tweets)}, 配图总数: {total_imgs}")
 
     print("\n[2/3] 开始生成 PDF 文件...")
     output_path = args.output
