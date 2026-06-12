@@ -161,13 +161,19 @@ def process_single_item(item):
         return "empty", tw
     tid = match.group(1)
 
-    folder_name = make_folder_name(tw["time_raw"], tid)
-    folder_path = os.path.join(BASE_DIR, folder_name)
-
-    if os.path.exists(folder_path):
+    # 【修复】按推文ID全局去重，解决同ID多目录问题
+    has_exist = False
+    for d in os.listdir(BASE_DIR):
+        if d.endswith(f"_{tid}"):
+            has_exist = True
+            break
+    if has_exist:
         return "exists", tw
 
+    folder_name = make_folder_name(tw["time_raw"], tid)
+    folder_path = os.path.join(BASE_DIR, folder_name)
     os.makedirs(folder_path, exist_ok=True)
+
     txt_path = os.path.join(folder_path, "推文内容.txt")
     txt_content = f"""发布时间：{tw['time_raw']}
 正文：{tw['content']}
