@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 推文PDF生成器 GitHub Actions 专用版
-使用Ubuntu系统预装中文字体，无需网络下载，彻底解决链接失效问题
+使用仓库内本地字体，不依赖系统/网络
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
@@ -23,6 +23,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # ===================== 路径配置 =====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 仓库内字体路径
+FONT_FILE = os.path.join(BASE_DIR, "fonts", "wqy-microhei.ttc")
 TWEET_DATA_DIR = os.path.join(BASE_DIR, "tweet_data")
 REPORTS_DIR = os.path.join(BASE_DIR, "pdf_output")
 os.makedirs(REPORTS_DIR, exist_ok=True)
@@ -30,28 +32,26 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 # 输出文件（固定，覆盖旧文件）
 DEFAULT_OUTPUT = os.path.join(REPORTS_DIR, "推文合集.pdf")
 
-# ===================== 注册Ubuntu系统内置中文字体（文泉驿微米黑） =====================
-# GitHub Actions Ubuntu 固定字体路径，无需下载
-FONT_PATH = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
-FONT_NAME = "WQYMicrohei"
+# ===================== 加载仓库本地字体 =====================
+FONT_NAME = "LocalWqyFont"
 use_font = "Helvetica"
 
-def init_system_font():
-    """加载系统预装中文字体"""
+def load_local_font():
+    """加载仓库内本地中文字体"""
     global use_font
-    if os.path.exists(FONT_PATH):
+    if os.path.exists(FONT_FILE):
         try:
-            pdfmetrics.registerFont(TTFont(FONT_NAME, FONT_PATH))
+            pdfmetrics.registerFont(TTFont(FONT_NAME, FONT_FILE))
             use_font = FONT_NAME
-            print(f"✅ 成功加载系统中文字体: {FONT_PATH}")
+            print(f"✅ 成功加载仓库本地字体: {FONT_FILE}")
             return True
         except Exception as e:
             print(f"⚠️ 字体注册失败: {e}")
-    print("⚠️ 未找到系统中文字体，将使用默认英文字体")
+    print("⚠️ 未找到本地字体，将使用默认英文字体")
     return False
 
 # 初始化字体
-init_system_font()
+load_local_font()
 
 # ===================== 配色方案 =====================
 COLOR_PRIMARY = HexColor("#1a1a2e")
@@ -227,7 +227,8 @@ class ColorBar(Flowable):
         Flowable.__init__(self)
         self.width = width
         self.height = height
-        self.color
+        self.color = color
+
     def draw(self):
         self.canv.setFillColor(self.color)
         self.canv.rect(0, 0, self.width, self.height, fill=1, stroke=0)
@@ -409,7 +410,7 @@ def build_tweet_pages(story, tweets):
                     textColor=HexColor("#e74c3c"), leading=12
                 )
                 story.append(Paragraph(f"[图片加载失败] {str(e)}", err_style))
-                story.append(Spacer(1, 4 * mm))
+                story.append(Spacer(1, 2 * mm))
 
         story.append(Spacer(1, 4 * mm))
         story.append(HRFlowable(
