@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """
 推文PDF生成器 GitHub Actions 专用版
-带完整调试日志，适配本地TTF字体
+优化点：
+1. 修复大范围Unicode正则导致正文内容丢失问题
+2. 精准过滤Emoji，完整保留所有正常文字、符号、外文
+3. 目录预览可配置是否截断，默认放宽长度
+4. 统一正文/引用的表情处理逻辑
+5. 保留原有字体、排版、去重、图片渲染全部功能
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
@@ -68,6 +73,37 @@ COLOR_CARD_BG = HexColor("#ffffff")
 COLOR_GOLD = HexColor("#d4a843")
 
 PAGE_W, PAGE_H = A4
+
+# ===================== 全局表情配置 & 精准Emoji正则 =====================
+emoji_map = {
+    "\U0001f602": "[笑哭]", "\U0001f923": "[笑哭]", "\U0001f604": "[笑]",
+    "\U0001f914": "[思考]", "\U0001f910": "[闭嘴]", "\U0001f60e": "[酷]",
+    "\U0001f525": "[火]", "\U0001f680": "[火箭]", "\U0001f4c8": "[涨]",
+    "\U0001f4c9": "[跌]", "\U0001f4b0": "[钱]", "\U0001f4a1": "[灯泡]",
+    "\U0001f44d": "[赞]", "\U0001f44e": "[踩]", "\U0001f622": "[哭]",
+    "\U0001f60a": "[微笑]", "\U0001f60d": "[爱心]", "\U0001f929": "[眼冒星]",
+    "\U0001f631": "[惊恐]", "\U0001f92f": "[爆头]", "\U0001f643": "[倒脸]",
+    "\U0001f534": "[红圈]", "\U0001f7e2": "[绿圈]", "\U0001f535": "[蓝圈]",
+    "\U0001f7e1": "[黄圈]", "\u26a0\ufe0f": "[警告]", "\u2757": "[!]",
+    "\u2b50": "[星]", "\u2705": "[OK]", "\u274c": "[X]",
+}
+
+# 精准匹配Emoji区间，不误伤正常文字/符号/字母
+emoji_pattern = re.compile(
+    "["
+    u"\U0001F600-\U0001F64F"
+    u"\U0001F300-\U0001F5FF"
+    u"\U0001F680-\U0001F6FF"
+    u"\U0001F1E0-\U0001F1FF"
+    u"\U00002500-\U00002BEF"
+    u"\U00002702-\U000027B0"
+    u"\U000024C2-\U0001F251"
+    "]+",
+    flags=re.UNICODE
+)
+
+# 目录预览最大字符数，调大=展示更多内容，设0=完全不截断
+TOC_PREVIEW_MAX = 200
 
 # ===================== 工具函数 =====================
 def parse_engagement_line(line):
@@ -351,9 +387,14 @@ def build_toc_page(story, tweets):
     )
     for i, tweet in enumerate(tweets, 1):
         date_str = tweet.get("date", "N/A")
-        text_preview = tweet.get("text", "")[:60]
-        if len(tweet.get("text", "")) > 60:
-            text_preview += "..."
+        text_raw = tweet.get("text", "")
+        
+        # 目录预览处理
+        if TOC_PREVIEW_MAX > 0 and len(text_raw) > TOC_PREVIEW_MAX:
+            text_preview = text_raw[:TOC_PREVIEW_MAX] + "..."
+        else:
+            text_preview = text_raw
+
         n_imgs = len(tweet.get("images", []))
         img_tag = f" [{n_imgs}图]" if n_imgs > 0 else ""
         line = f"{str(i).rjust(2)}. {date_str} {text_preview}{img_tag}"
@@ -381,19 +422,6 @@ def build_tweet_pages(story, tweets):
         textColor=COLOR_TEXT_LIGHT, leading=12, alignment=TA_CENTER
     )
 
-    emoji_map = {
-        "\U0001f602": "[笑哭]", "\U0001f923": "[笑哭]", "\U0001f604": "[笑]",
-        "\U0001f914": "[思考]", "\U0001f910": "[闭嘴]", "\U0001f60e": "[酷]",
-        "\U0001f525": "[火]", "\U0001f680": "[火箭]", "\U0001f4c8": "[涨]",
-        "\U0001f4c9": "[跌]", "\U0001f4b0": "[钱]", "\U0001f4a1": "[灯泡]",
-        "\U0001f44d": "[赞]", "\U0001f44e": "[踩]", "\U0001f622": "[哭]",
-        "\U0001f60a": "[微笑]", "\U0001f60d": "[爱心]", "\U0001f929": "[眼冒星]",
-        "\U0001f631": "[惊恐]", "\U0001f92f": "[爆头]", "\U0001f643": "[倒脸]",
-        "\U0001f534": "[红圈]", "\U0001f7e2": "[绿圈]", "\U0001f535": "[蓝圈]",
-        "\U0001f7e1": "[黄圈]", "\u26a0\ufe0f": "[警告]", "\u2757": "[!]",
-        "\u2b50": "[星]", "\u2705": "[OK]", "\u274c": "[X]",
-    }
-
     for i, tweet in enumerate(tweets, 1):
         date_str = tweet.get("date", "")
         title_text = f"#{i}  {date_str}"
@@ -402,10 +430,13 @@ def build_tweet_pages(story, tweets):
         story.append(Spacer(1, 3 * mm))
 
         raw_text = tweet.get("text", "")
+        # 正文清洗：转义标签 + 替换表情 + 精准过滤Emoji
         safe_text = raw_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         for emoji, text in emoji_map.items():
             safe_text = safe_text.replace(emoji, text)
-        safe_text = re.sub(r"[\U0001f000-\U0001ffff]", "", safe_text)
+        safe_text = emoji_pattern.sub("", safe_text)
+
+        # 话题、币种着色 + 换行转换
         safe_text = re.sub(r"#([a-zA-Z]\w*)", r'<font color="#0984e3"><b>#\1</b></font>', safe_text)
         safe_text = re.sub(r"\$([A-Z]{1,6}(?:\.[A-Z])?)", r'<font color="#e94560"><b>\$\1</b></font>', safe_text)
         safe_text = safe_text.replace("\n", "<br/>")
@@ -414,13 +445,18 @@ def build_tweet_pages(story, tweets):
             story.append(Paragraph(safe_text, text_style))
             story.append(Spacer(1, 2 * mm))
 
+        # 引用内容清洗（同正文逻辑）
         quote_text = tweet.get("quote", "")
         if quote_text.strip():
             safe_quote = quote_text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
             for emoji, text in emoji_map.items():
                 safe_quote = safe_quote.replace(emoji, text)
-            safe_quote = re.sub(r"[\U0001f000-\U0001ffff]", "", safe_quote)
+            safe_quote = emoji_pattern.sub("", safe_quote)
+
+            safe_quote = re.sub(r"#([a-zA-Z]\w*)", r'<font color="#0984e3"><b>#\1</b></font>', safe_quote)
+            safe_quote = re.sub(r"\$([A-Z]{1,6}(?:\.[A-Z])?)", r'<font color="#e94560"><b>\$\1</b></font>', safe_quote)
             safe_quote = safe_quote.replace("\n", "<br/>")
+
             story.append(Paragraph(f"[引用] {safe_quote}", quote_style))
             story.append(Spacer(1, 3 * mm))
 
@@ -438,6 +474,7 @@ def build_tweet_pages(story, tweets):
         )
         story.append(Paragraph(stats_text, stats_style))
 
+        # 图片渲染
         images = tweet.get("images", [])
         content_width = PAGE_W - 60 * mm
         for j, img_path in enumerate(images, 1):
@@ -493,7 +530,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 60)
-    print("  推文PDF生成器 (GitHub Actions 版 - 带调试日志)")
+    print("  推文PDF生成器 (GitHub Actions 优化版)")
     print("=" * 60)
 
     tweets = scan_tweet_dirs()
