@@ -1,5 +1,5 @@
-name: 推文获取
-于:
+name: 自动抓取推文
+on:
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"  # UTC 每30分钟执行，免费账号稳定，不易限流
