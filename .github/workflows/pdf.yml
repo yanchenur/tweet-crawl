@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,12 +29,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install reportlab pillow
+          pip install reportlab pillow requests
 
       - name: Run PDF generator
         run: python gen_tweet_pdf.py
 
-      # 上传 PDF 到 GitHub Release（固定标签 latest-pdf，每次覆盖）
       - name: Upload PDF to Release
         uses: softprops/action-gh-release@v2
         with:
@@ -40,5 +41,5 @@ jobs:
           name: 最新推文合集PDF
           body: 自动定时生成，每日更新
           files: pdf_output/推文合集.pdf
-          overwrite: true
+          overwrite_files: true
           make_latest: false
