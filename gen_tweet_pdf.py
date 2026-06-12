@@ -6,7 +6,8 @@
 2. 精准过滤Emoji，完整保留所有正常文字、符号、外文
 3. 目录预览可配置是否截断，默认放宽长度
 4. 统一正文/引用的表情处理逻辑
-5. 保留原有字体、排版、去重、图片渲染全部功能
+5. 【重点修复】支持多行正文读取，完整加载txt内所有正文内容
+6. 保留原有字体、排版、去重、图片渲染全部功能
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
@@ -182,46 +183,47 @@ def parse_tweet_text(txt_path, dir_name=""):
         "views": "",
     }
 
-    lines = content.strip().split("\n")
+    lines = content.split("\n")
+    text_buffer = []
+    in_content = False
+
     for line in lines:
-        line = line.strip()
-        if not line:
+        raw_line = line
+        line_strip = line.strip()
+        if not line_strip:
+            if in_content:
+                text_buffer.append(raw_line)
             continue
-        if line.startswith("发布时间：") or line.startswith("发布时间:"):
-            raw_date = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+
+        # 发布时间
+        if line_strip.startswith(("发布时间：", "发布时间:")):
+            raw_date = line_strip.split("：", 1)[-1].split(":", 1)[-1].strip()
             data["date"] = convert_relative_date(raw_date, dir_name)
-        elif line.startswith("正文：") or line.startswith("正文:"):
-            data["text"] = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-        elif line.startswith("引用：") or line.startswith("引用:"):
-            quote_text = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-            if quote_text:
-                data["quote"] = quote_text
-        elif "评论" in line and ("转发" in line or "点赞" in line or "浏览" in line):
-            eng = parse_engagement_line(line)
+            in_content = False
+        # 引用内容
+        elif line_strip.startswith(("引用：", "引用:")):
+            quote_text = line_strip.split("：", 1)[-1].split(":", 1)[-1].strip()
+            data["quote"] = quote_text
+            in_content = False
+        # 互动统计行
+        elif any(k in line_strip for k in ("评论", "转发", "点赞", "浏览")):
+            eng = parse_engagement_line(line_strip)
             data["comments"] = eng["comments"]
             data["retweets"] = eng["retweets"]
             data["likes"] = eng["likes"]
             data["views"] = eng["views"]
-        elif line.startswith("评论：") or line.startswith("评论:"):
-            val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-            try:
-                data["comments"] = int(val.replace(",", ""))
-            except ValueError:
-                pass
-        elif line.startswith("转发：") or line.startswith("转发:"):
-            val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-            try:
-                data["retweets"] = int(val.replace(",", ""))
-            except ValueError:
-                pass
-        elif line.startswith("点赞：") or line.startswith("点赞:"):
-            val = line.split("：", 1)[-1].split(":", 1)[-1].strip()
-            try:
-                data["likes"] = int(val.replace(",", ""))
-            except ValueError:
-                pass
-        elif line.startswith("浏览：") or line.startswith("浏览:"):
-            data["views"] = line.split("：", 1)[-1].split(":", 1)[-1].strip()
+            in_content = False
+        # 正文起始行
+        elif line_strip.startswith(("正文：", "正文:")):
+            content_part = line_strip.split("：", 1)[-1].split(":", 1)[-1]
+            text_buffer.append(content_part)
+            in_content = True
+        # 正文后续多行
+        elif in_content:
+            text_buffer.append(raw_line)
+
+    # 拼接完整多行正文，保留原始换行
+    data["text"] = "\n".join(text_buffer).rstrip()
 
     print(f"[调试] 解析结果: date={data['date']}, text长度={len(data['text'])}, quote长度={len(data['quote'])}")
     return data
