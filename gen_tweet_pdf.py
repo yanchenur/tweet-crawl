@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 推文PDF生成器 GitHub Actions 专用版
-使用仓库内本地字体，不依赖系统/网络
+使用仓库内本地 .ttf 字体，兼容ReportLab
 固定输出：pdf_output/推文合集.pdf，每次覆盖旧文件
 """
 
@@ -23,8 +23,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # ===================== 路径配置 =====================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# 仓库内字体路径
-FONT_FILE = os.path.join(BASE_DIR, "fonts", "wqy-microhei.ttc")
+# 改为 .ttf 字体
+FONT_FILE = os.path.join(BASE_DIR, "fonts", "wqy-microhei.ttf")
 TWEET_DATA_DIR = os.path.join(BASE_DIR, "tweet_data")
 REPORTS_DIR = os.path.join(BASE_DIR, "pdf_output")
 os.makedirs(REPORTS_DIR, exist_ok=True)
