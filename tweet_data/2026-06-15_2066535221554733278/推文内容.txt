@@ -1,0 +1,44 @@
+发布时间：26m
+正文：Just as a recap, these were all my core European longs:
+
+1. $SIVE 2. $LPK 3. $SOI 4. $RPI 5. $IQE 6. $ALRIB 7. $XFAB Sivers: As you know by now, core laser chokepoint over next generation photonics, from 1.6T pluggables to CPO.
+
+Embedded in many hyperscaler suppliers from Jabil to Ayar. Should go brrr 2027 but markets are forward looking, so ramps + qualifications should get priced in now. 
+
+LPK Laser - Glass core substrate "monopoly" with LIDE. 
+
+"More than 80% of major global players have selected our equipment for process validation, learning and scaling to mass production"
+
+Soitec - Silicon photonics SoI substrate pure monopoly while coming out of legacy drag segments.  
+
+Raspberry Pi - Was my fun idea around Raspberry Pis being used for AI hardware deployments. 
+
+Previously this thing was mainly educational or hobby boards, but now used for edge/local AI. Just thought revenue increase would be extremely material and it played out well. 
+
+IQE - Critical epiwafer player for your Western photonics like Macom, Tower, Lumentum, and others. 
+
+Was kinda going under, but thought their latent capacity relative to Landmark was undervalued. 
+
+Also given how important it was, I thought that your downstream players + Govs wouldn't let it go under, so it was more of a moonshot idea earlier in the year. 
+
+Lot more derisked now, very important.
+
+Riber - Kinda monopoly in the MBE space, exposure to Quantum / quantum dot + silicon photonics. 
+
+Found out from OSINT help from a friend latentvalue that Microsoft Quantum was buying their machines, so this was direct hyperscaler validation + kinda de-risked at current MCs.
+
+XFab - SiC foundry backed by EU/US CHIPS Act with power semi upside. (152% Y/Y growth for their sic vertical). 
+
+Main growth was their silicon photonics foundry past 2027 that's getting evaled by nvidia. And that they're leading Europe's value chain efforts in photonics, kinda like an early tower semi. 
+
+We'll see how this plays out, thought power semi exposure + low P/B would derisk the company until they scale their photbunchonics efforts. 
+
+From my own personal thoughts:
+
+Out of the  maybe $SOI has already been re-rated the most? But I'm holding anyway. $LPK and $ALRIB I think are still undervalued despite their monopolies. $RPI is just kinda seeing how things go at this point, would be hilarious if they ended up like a mini nvidia for low end edge ai. $IQE probably has a long way to go given new tower long term agreement, alongside macom. And if they convert latent capacity, I still think it has a chance of rerating like landmark. $XFAB idk if im missing something or are markets missing something. you have nvidia as a direct eval of their silicon photonics foundry, and it's trading below replacement P/B. i think im right though. $SIVE I see has the highest upside out of all of them given laser company ability to vertically integrate, acquire companies downstream to make their lasers more valuable, etc. Just like coherent/lumentum. 
+
+There's like 1-2 more random ones that aren't really material, but just in general.
+
+These are the ones I've liked the most.
+引用：Do you have some similar older stock picks, you still believe in and want for them to rise accordingly?
+评论：149 转发：57 点赞：663 浏览：
