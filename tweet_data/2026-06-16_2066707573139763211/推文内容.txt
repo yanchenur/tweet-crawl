@@ -1,0 +1,20 @@
+发布时间：3h
+正文：New reports that $AMD is scrambling for CW laser supply. 
+
+And is negotiating large-scale purchase orders for CW Lasers to ensure its production capacity is not constrained by $NVDA (Trendforce)
+
+Obvious CW laser beneficiaries: 
+- $SIVE (AMD went to GFS for CPO, Sivers reference laser level)
+- $AAOI (Rosenblatt analyst checks)
+
+Lumentum/Coherent are kinda booked out way into 2028 as well. 
+
+Lumentum is especially constrained for CW capacity already from existing EML contracts (so they probably are buying from Sumitomo/Furukawa and co). 
+
+Maybe Macom and Japanese giants still have spare capacity. (disclosure, own aaoi/sivers).
+
+I predicted this last year and said hyperscalers should go more upstream to secure capacity... at laser levels, epiwafer levels, or even inp substrate levels. 
+
+To not get bottlenecked by Nvidia.
+引用：
+评论：278 转发：107 点赞：1,223 浏览：
