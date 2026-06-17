@@ -1,0 +1,24 @@
+发布时间：25m
+正文：Mizuho Research: No delays on CPO or 800v dc. 
+
+Revised up optical engine projections from $NVDA demand ramp.  
+
+- Next phase in CPO for long term, believes InP DFB lasers remains the focus (hello $SIVE ). VSCEL and microLED remain "unproven" in short distance in rack + chip to chip for 1.6T+ 
+
+- HVDC deployment on track, 800VDC incremental volume 2027, with higher penetration in 2028.
+
+What a stupid CPO related selloff recently.
+引用：$NVDANetworking Senior Vice President refuting recent analyst reports on delays:
+
+- “ the most exciting stuff is co-packaged optics.”
+- There is no delay in H2 CPO product delivery schedule. 
+- CPO switch will enter mass production and begin ramping up customer deliveries as planned in the second half of 2026
+
+This was a media article, original interview source credit should have been credited to Tae Kim / Computex. 
+
+Something fun to note too was this quote “Gilad was VERY enthusiastic about the CPO ramp from Nvidia.” 
+
+Both near term and long term.
+
+Yeah… I’m extremely bullish on CPO alongside Nvidia.
+评论：101 转发：31 点赞：350 浏览：49,333
