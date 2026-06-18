@@ -1,0 +1,88 @@
+发布时间：1h
+正文：Just a reminder: 99% of X was bearish on memory 3 months ago...
+
+Since then: $MU $380 -> $1122 (+195.26%) $SNDK $565 -> $2155 (+281.42%) $EWY $132 -> $219 (+65.91%)
+SK Hynix 849K -> 2.685M KRW (+215.5%)
+Samsung 172K -> 362K KRW (+110.7%)
+
+If you see a bunch of projections on memory names like Samsung becoming the most profitable company in the world in 2028. 
+
+Might be a good idea to think independently outside of the narratives at the time like "Oil, LNG, Helium, Iran, etc."
+
+Probably same thing now with optical names and their projections into 2027, 2028.  
+
+I do think photonics and memory are the 2 top themes though, with optics being very early into the supercycle.
+引用：Thoughts on the$EWY/ KOSPI crash and whether it's a buying opportunity for Samsung/Sk Hynix:
+
+This looks like a clear buying opportunity.
+
+Especially as investors misunderstand that 2026 is not 2022 (Ukraine-Russia) conflicts. 
+
+AI has fundamentally changed the demand for memory, compared to the 2022 downturn in consumer electronics, where Samsung/Sk Hynix also footed opex costs. 
+
+The main catalyst for one of the largest single-day drops in Korean history was Iran drone striking QatarEnergy's Ras Laffan complex. 
+
+Qatar is roughly ~20% of the global LNG supply.
+
+Results: 
+
+-> Dutch TTF (Euro Natural Gas): +46%
+-> Asian Spot LNG: + 39%
+-> U.S. Natural Gas: +4.16% (fine)
+
+The LNG spike was the catalyst for the drop as South Korea is materially exposed as it relies on imported LNG. 
+
+Fearing this inflationary energy shock, investors aggressively dumped South Korean tech equities, combined with deleveraging of 10x Samsung/Sk Hynix. 
+
+Sending
+-> Samsung Electronics down by 9.79%.
+-> SK Hynix shares sank by 11.12%.
+
+and the$EWY(KR futures) down 14.49% today.
+
+Everyone is fearing the 2022 incident with Russia-Ukraine war increasing LNG prices, causing industrial electricity tariffs in South Korea climbed by roughly 70% after KEPCO stopped abosring losses. 
+
+In 2022 alone, Samsung's domestic facilities consumed approximately 28,000 GWh of electricity.
+
+The tariff hikes added an estimated KRW 2 trillion (over $1.4 billion USD) to Samsung's annual operating expenses and over KRW 1 trillion for SK Hynix.
+
+This unprecedented spike in operational expenses (OPEX) hit at the exact worst possible time. 
+
+In late 2022, the semiconductor industry entered a brutal cyclical downturn. Post-pandemic demand for PCs and smartphones plummeted, leading to a massive oversupply of DRAM and NAND flash.
+
+However, 2026 is completely different:
+
+Compared to 2022 that faced increasing energy costs during a downturn:
+
+AI demand for memory is completely unprecedented. On the 27th, there were reports of DRAM hikes again from Samsung/Sk Hynix.  
+
+Demand for NAND prices from$SNDKhave been so high for capacity allocation that they've been taking 3 year pre-orders in advance.
+
+There is no end to demand in sight, and no relief way until 2028. 
+
+Comparing this to 2022, where consumer segments for laptops and smartphones were already facing a downturn, memory makers could not pass on the costs (and tanked opex bill). That caused a major correction last time. 
+
+Because the global AI chip shortage is so acute in 2026, they will seamlessly pass their inflated utility bills down the supply chain. 
+
+Because supply is severely constrained, Samsung and SK Hynix dictate the market terms. Big Tech hyperscalers (Microsoft, Meta, Google, Amazon) are locked in an AI arms race. They are highly price-insensitive right now and prioritize securing volume over haggling.
+
+As a result, this looks like a clear buying opportunity, especially as projections range from:
+
+Morgan Stanley | Macquarie on Samsung 
+2026: ~$182.0B USD vs.  ~$210.8B USD  
+2027: ~$235.1B USD vs.  ~$333.7B USD  
+
+Morgan Stanley | Macquarie on SK Hynix: 
+2026: ~$132.9B USD vs. ~$190.5B USD
+2027: ~$167.0B USD vs. ~$312.8B USD 
+
+The selloff looks like an immediate de-risking from fears over 2022 Ukraine-Russia-conflicts, combined with extreme leverage from 10x instruments.
+
+But unlike 2022, where laptops and consumer demand were already facing a downturn and LNG spikes caused Samsung/SK Hynix to foot the bill:
+
+This time it's passed onto hyperscaler costs because demand is too high. 
+
+People always compare KOSPI to silver, but the difference is one has whopping operational income, where in a bull-case scenario, 2 years of income alone would exceed their market cap of companies like SK Hynix. 
+
+The drop on Samsung/Sk Hynix looks like a clear buying opportunity as their operational income will likely blow past any short term volatility.
+评论：171 转发：60 点赞：867 浏览：196,907
