@@ -1,0 +1,31 @@
+发布时间：1h
+正文：$ALRIB general meeting notes came out today.
+
+-2nd ROSIE System expected to be delivered shortly to a leading quantum computing player” in the US.
+
+- They’re also intensifying BD for their products used for BTO/STO on photonics and recorded strong interest. 
+
+Just for background, they’re the MBE duopoly with Veeco, which got re-rated heavily recently (Disclosure own Riber), with exposure to Quantum.
+
+Positive development overall.
+引用：$MSFTlooks like a secret buyer of Riber 
+<$ALRIB> for Microsoft Quantum.
+
+The broader market and algorithms likely don’t know this connection yet.
+
+MBEs are important for quantum computing, quantum dot lasers, VCSELs, and silicon photonics.
+
+But the long-term implications are sizable if Microsoft Quantum: 
+
+-> Are starting to buy from this European equipment manufacturer
+
+Quantum is still very early and risks to early stage industries are material.
+
+But since this company looks like an$AIXAfor Quantum and trades at a profitable  ~27x est. forward P/E, as a duopoly for MBE with$VECO, it looks interesting. 
+
+From open LinkedIn intelligence, having a US hyperscaler use Riber MBE equipment to fab frontier quantum chips.
+
+At the very least helps validate the company’s importance as a technology. 
+
+And makes it appear well positioned to capture quantum computing and quantum dot capex cycles in the near future.
+评论：103 转发：17 点赞：303 浏览：109,784
