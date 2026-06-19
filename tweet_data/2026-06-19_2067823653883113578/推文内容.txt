@@ -1,0 +1,16 @@
+发布时间：1h
+正文：Just a random thought, maybe someone can do a startup to solve this:
+
+Interesting trend I’m seeing is human-recognized content farm spam sites like “Ad Hoc News”.
+
+Flooding tens of old/repeated misleading AI news every day on specific companies for views.
+
+But it’s treated highly + fresh to AI retrieval. So LLMs like Gemini get polluted citing that data.
+
+Then you have people without technical backgrounds like college students making writeups on things they don’t understand, using AI.
+
+Then LLMs get polluted in training/retrieval with that too, so you see people conflating the wrong technical nuance like comparing single channels of a cw dfb laser array vs. single high power lasers outputs.
+
+So you have a feedback loop of low tier AI feeding into frontier AI. With model retrieval getting contaminated.
+引用：
+评论：75 转发：9 点赞：392 浏览：56,892
