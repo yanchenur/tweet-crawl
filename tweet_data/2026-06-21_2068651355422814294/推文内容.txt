@@ -1,0 +1,38 @@
+发布时间：2h
+正文：That’s a misconception: $SIVE is the laser supplier for next gen architectures, not just CPO scale up. 
+
+Pluggable, scale out CPO, scale up CPO, NPO, etc. 
+
+- Sivers and $JBL went god-mode and developed 1.6T optical transceivers with CW lasers.
+
+Effectively designing around the EML bottlenecks, and even made things more power efficient. 
+
+From quotes from Jabil management they created a “relatively dramatic moat”.
+
+So for the next gen of 1.6T pluggable transceivers, Sivers seems immediately used.
+
+Markets missed this nuance too: after Jabil’s announcement, other pluggable players reached out, and SIVE is working with them now (prob codevelopment, qualification stage).
+
+There’s not too many players that build optical transceivers that aren’t vertically integrated like Lumentum (think: Innolight/eoptolink, and maybe others).
+
+So these are active developments, just not public material yet and could be a new press release anytime.
+
+- for CPO scale out which happens H2 2026 onward like $POET , $SIVE is a laser supplier for those players.
+
+- scale up CPO is h2 2027, from Ayar and Nvidia’a NVLink CPO ecosystem and that’s the main volume ramp across optical players.
+
+But this is where $SIVE looks like they mog every other player from supply chain mapping.
+
+Since they’ve likely been working + designed in with $MRVL Celestial, Lightmatter, Lightelligence and the others since they were small way back when.
+
+On top of things like this:
+
+For foundries like $GFS , $SIVE is the reference laser.
+
+Not even including massive companies like O-Net building ELS with $SIVE , likely for the Asian hyperscalers supply chains.
+
+This is why $SIVE is by far my favorite laser chokepoint long.
+
+Feels like they’re everywhere in new optical architectures starting beginning of 2027.
+引用：股神，Sivers的DFB激光阵列因为是波分复用，又是多通道，算下来速率好高，只在scale-up才用得上吧? 会不会大规模量产要很久很久？中间可能有各种风险。
+评论：136 转发：56 点赞：586 浏览：138,282
