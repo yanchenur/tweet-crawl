@@ -1,0 +1,36 @@
+发布时间：43m
+正文：As for $LPK : Maybe $3B-$5B seems reasonable when they fully volume ramp if I had to guess. 
+
+Feels more asymmetrical to me personally since it's just a waiting game and they have the customers for glass substrates. 
+
+Small machine supplier chokepoints usually cap out from TAM though and don't go to $20B+ unless you're ASML or hold many chokepoints like KLAC. 
+
+Not many dominant "monopolies" like these out there right before volume ramp this small: 
+
+Maybe you have stuff like: 
+- Aixtron (MOCVD) ~$8B
+- Towa (compression bonding) ~$2B 
+- Techwing (memory handler/cube probes) ~$1.5B
+- MSScorps (CPO inspection), but pre-ramp. $850M
+- Riber (quantum MBE), very pre-ramp ~$350M 
+
+Then LPK Laser for glass core substrates (about to ramp) at ~$730M, which thematically should have more premiums than memory. (eg. major advanced packaging shift, CPO adjacent, etc). 
+
+Lot of obscure chemical monopolies I know of, but those don't get as much attention cause BOM is much lower than equipment. 
+
+But for lpk you have:
+
+eg. “80% of customers among major global players have selected LPKF equipment”.  
+
+70% of LIDE market share target for TGV in the glass-core ramp, should be very material. (disclosure: own, the listed names above aside from techwing/aixtron, NFI).
+
+Just kinda the path they go if you follow $AEHR at ~$3.5B now:
+
+- <$500m: "Oh they have no customers!" 
+---> (probably somewhere in the middle here).
+- < $1.5B: "Maybe volume comes soon!" 
+- $3B+ onward: "Looks like they're starting to volume ramp. 
+
+Just a lesson for the cycle of the chokepoint machine suppliers from my personal experiences.
+引用：And for$LPK?
+评论：94 转发：23 点赞：296 浏览：101,447
