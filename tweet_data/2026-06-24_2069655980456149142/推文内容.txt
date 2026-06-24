@@ -1,0 +1,37 @@
+发布时间：2h
+正文：Don’t quite think “siphoned off” is the correct term. 
+
+It’s capex for massive revenue increase or margin increase down the line. $AMZN is probably my favorite hyperscaler right now and example to give.
+
+Amazon’s headcount is absurd, like ~1.57M. If the capex goes into automating their workforce with LLMs.
+
+Then transitioning into physical AI:
+
+- things from self driving (deliveries)
+- robotics (Amazon warehouses, shipping automation).
+
++ revenue increase from building out AWS compute with Trainium and possibly selling chips too with the Neocloud strat.
+
+It’s probably the clearest path forward compared to every hyperscaler out there. $TSLA optimus use case targets is extremely broad as a pitch, but Amazon already has a specific reason to scale robotics for internal opex optimization.
+
+As for $GOOGL , probably 2nd right now, AI capex was necessary for defending its Google Search moat Gemini from ChatGPT
+
+They also have Google Cloud revenue with efficient TPUs + can sell TPUs like Nvidia GPUs.
+
+Gemini user volumes keep going up (despite the lack of contention in frontier benchmarks); and AI strategy to be working for ad optimization too.
+
+But there’s less clear paths with physical AI stuff ig?
+
+Microsoft and Meta are still trying to convince the market why capex is necessary, (we’re kinda seeing that in effect with Meta’s 30%+ Y/Y revenue growth), but doesn’t look like they’re convinced. 
+
+As for market narratives, Microsoft Maia seems to be behind, their AI development was stunted from OpenAi investments, so sentiment is kinda in the ground. 
+
+But think that will change down the road like the 180 with Google.
+
+I’m sure all the hyperscalers are seeing the leader effect right now:
+
+If you have the leading LLM, people will keep using it. That LLM gets smarter from all the training data; and that gap might be structural.
+
+Which is why everyone is kinda rushing the buildout right now, but for some the immediate incentives seem obvious.
+引用：你说的这些AI股涨的前提是Google/Microsoft/Amazon这种hyperscaler继续加大投资，但是当他们的利润全都被半导体公司赚走的时候还有会动力加大资本支出吗？现在这个趋势其实对后续股市非常危险，当hyperscaler不再愿意无限扩大支出，又或者anthropic营收涨幅不及预期的话股市很容易一夜崩盘。
+评论：82 转发：31 点赞：492 浏览：209,084

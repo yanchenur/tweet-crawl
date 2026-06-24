@@ -1,0 +1,19 @@
+发布时间：1h
+正文：OpenLight (private) seems to get bigger and bigger every time I look at it.
+
+If you’re curious about their public ecosystem outside of Advantest: $JBL ( $SIVE partner ) for scaling PICs $MRVL and $MXL for DSPs $TSEM for the foundry.
+$300394.SZ / TFC Optical (OSAT/subassembly)
+
+Can often get exposure into private growth through public equities if you’re not an accredited investor.
+
+Since optical players look very interconnected.
+引用：Advantest (TSE: 6857 /$ATEYY) × OpenLight: Silicon Photonics HVM Test Partnership
+
+Advantest and OpenLight have announced a partnership to co-develop scalable, high-volume manufacturing (HVM) test solutions for silicon photonics (SiPh) devices. The demand logic runs cleanly through the release: expanding AI/HPC workloads drive data-center adoption of SiPh and co-packaged optics (CPO), which in turn surfaces a production-stage test bottleneck. That bottleneck is the high-volume testing of electro-optical (EO) devices, specifically the Optical Engine. SiPh devices demand simultaneous electrical measurement and optical coupling/alignment, so conventional electrical ATE infrastructure alone cannot deliver the throughput needed to scale. The two companies target an end-to-end test framework spanning wafer sort through final test, with OpenLight contributing its III-V heterogeneous integration PASIC (Photonic ASIC) and PDK, and the release citing a recent $50M Series A-1 round (total funding $84M) as evidence of commercial momentum.
+
+Advantest enters SiPh test directly, sharpening the ATE duopoly contest. This move puts Advantest in head-to-head positioning against Teradyne's Photon 100 in the EO/tester layer, with both incumbents now moving to absorb production-test demand from fabless PIC design houses like OpenLight.
+
+The constraint is structural, not incremental. Combining electrical test with optical alignment at volume is the hard part; framing it as "end-to-end, wafer sort to final test" signals the partners are targeting the full insertion chain rather than a single station, which is where throughput economics actually break.
+
+Read against the "Three Pillars" frame, this is an ATE-side consolidation signal. It complements rather than displaces the AEHR/FORM/KEYS wafer-test framework (photoncap.net/p/the-three-pi…), but the specific division of labor (optical alignment method, WLBI applicability, insertion architecture) is unstated and rests on a promotional first-party release, so it warrants cross-checking against later conference disclosures.
+评论：181 转发：24 点赞：320 浏览：165,469
