@@ -1,0 +1,46 @@
+发布时间：27m
+正文：just throwing out a random thought, the UBS report is anecdotally true + and it's interesting there's more Chinese reports on Anthropic distillation.  
+
+Many US startups/companies using AI:
+
+Are using Chinese models like DeepSeek since they’re much cheaper than Gemini/OpenAI/Anthropic reasoning models for cost per task.
+
+Kinda a catch 22 when US is built on capitalism and everyone goes for the cheaper options.
+
+I think the US just has to get good and out innovate here:
+
+- both with heavy KYC-auth frontier models for US only like Mythos given those are being distilled by competitors. and amybe staggered tiers for allied partners so US is always ahead
+
+Maybe something like dedicated AI Google auth like FaceID + Persona would do the trick before access/key creation for the newer models, then short lived scopes.
+
+At least addressing those simpler fake/stolen account + pool allegations, requiring biometrics before use.
+
+Then US Gov drafting new regulations making it illegal for sharing access similar to identity forgery with bank accounts.
+
+- then the most obvious one is just heavily optimized reasoning models that mogs DeepSeek and others.
+
+Kinda good Trump admin paused Fable/Mythos access, imo not quite sure why a trillion dollar company keeps letting itself get distilled over and over again.
+
+There should be friction added if you’re accessing something close to ASI.
+
+TLDR: US just needs to good at cheap inference and add bank-grade authentication to AI model access. Easier said than done tho.
+引用：Today, Anthropic called out DeepSeek, Moonshot, and Minimax for distillation.  
+
+OpenAI has also faced the same issues with Chinese labs. 
+
+The most braindead fix nobody is doing: 
+
+KYC verification. 
+
+Every financial institution from$HOODto$IBKRdoes this to track flow of funds (eg. Persona selfie / ID)
+
+Same should apply to token flows. 
+
+American Frontier Labs should start doing this soon for their latest models. 
+
+I'm sure they care about frictionless growth, but this is national security at risk and people/enterprises only need to go through this process once. 
+
+This is by far the easiest fix that can be done in a day. 
+
+Chinese labs will continue to find bypasses if this is not done.
+评论：73 转发：6 点赞：213 浏览：96,310
