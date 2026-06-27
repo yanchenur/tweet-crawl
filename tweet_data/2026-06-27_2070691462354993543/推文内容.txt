@@ -1,0 +1,18 @@
+发布时间：3h
+正文：$SPCX / Elon Musk acquires Mesh, an optical networking startup.
+
+Which is working on 1.6T OSFP (pluggable).
+
+It’s seems they own the optical engine/packaging side of things, but likely sources CW DFB lasers off merchant companies. $SIVE is one of the more startup friendly plausible merchant suppliers as seen with Ayar to $POET ?
+
+Maybe $LITE and $MTSI that were have a little history too, but less so.
+
+Regardless it’s very positive a lot of startups recently like Celestial have been acquired by Marvell.
+
+For both merchant laser supplier revenue (working with startups -> having hyperscalers like SpaceX drive revenue after being designed in already).
+
+As well as valuations from M&A desirability.
+
+Goes to show how optical interconnects is the right direction if Elon Musk is directly buying these companies.
+引用：
+评论：99 转发：48 点赞：786 浏览：180,536
