@@ -1,0 +1,26 @@
+发布时间：1h
+正文：Yup, Schaeffler $SHA0 is the ideal example for automotive players.
+
+~ €7.47B MC auto player.
+- but also working with 45 humanoid players (extremely insane number, they do have €5.14b debt, EV is higher)
+- covers bearings, gearboxes, sensors/ECUs, actuators, power electronics.
+-ests. They can be roughly 50% BOM of a humanoid 
+- targeting 10% market share of that.
+
+But only projecting a few hundred million revenue by 2030 (extremely sandbagged) if we’re using Elon’s projections for the market.
+
+Then’s theres auto players like Nabtesco (6268) for joints. And then Sanhua in China for $TSLA Optimus.
+
+Many of them are trade at lower valuations from drag from auto.
+
+But humanoids + AI Auto (TSM chairman cited this as a growth vector) should be a good catalyst past 2027 for automotive players. 
+
+IMO there just needs to be a ChatGPT/Anthropic breakout downstream leader first for humanoids.
+
+That brings up the entire ecosystem that has robotics exposure. 
+
+But as of now it’s probably like 1% of many of their overall revenue figures, and markets are focusing on immediate upside from bottlenecks like memory or MLCC.
+
+I’m sure we’ll see some random Toto-HBM type surprise as different humanoid architecture evolve.
+引用：Do you guys think auto supply chain and robotics supply chain will merge?
+评论：120 转发：18 点赞：331 浏览：136,230
