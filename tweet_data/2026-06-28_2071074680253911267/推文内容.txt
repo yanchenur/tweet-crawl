@@ -1,0 +1,18 @@
+发布时间：1h
+正文：WSJ: “China Has Matched Anthropic in Cybersecurity, Resetting AI Race”
+
+China’s Zhipu AI, has matched 
+Anthropic’s Mythos in certain benchmarks, such as exploiting cybersecurity bugs. 
+
+Well, that’s not good.
+
+Instead of blaming the administration which did the correct thing… 
+
+Anthropic’s clearly at fault for not setting enough guardrails to prevent distillation.
+Even before Fable release there were a lot of rumors that China had backdoors to distill it.
+
+Part of it is the trillions of capex to accelerate the AI moat. 
+
+And the second part is not handing that work over on a silver platter for millions in API calls.
+引用：
+评论：140 转发：31 点赞：452 浏览：112,243
