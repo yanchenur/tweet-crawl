@@ -1,0 +1,23 @@
+发布时间：4m
+正文：For robotics companies, I have a favorable view on Unitree and Agility Robotics, two humanoid players. 
+
+And I have largest concentration in Agility Robotics, since I personally prefer US humanoid players. 
+
+For upstream component exposure, I currently own:
+
+- Harmonic Drive (6324) given high content BOM on things like harmonic reduction gear. 
+- Vishay Precision for sensors and a possible candidate for Telsa Optimus.  
+
+LeaderDrive (688017) and Schaeffler I have favorable views on but don't own personally. 
+
+Many of the other AI DC players, I have indirect exposure to robotics like memory. 
+
+Don't recommend anyone to copy, just sharing personal positions/thoughts. 
+
+Humanoid sector is large, and as seen with Goldman Sachs report that "Korean companies will command a 30% direct and indirect share of global humanoid robot production". 
+
+Lot of players out there globally. This was an older report but just linking it again since you see all of them pop up in GS institutional reports + what they cover.
+
+Agility Robotics is my personal favorite as of now.
+引用：Thanks as always for your excellent notes!! What are the most compelling Robotic companies you are currently viewing?
+评论：30 转发：7 点赞：72 浏览：20,754
