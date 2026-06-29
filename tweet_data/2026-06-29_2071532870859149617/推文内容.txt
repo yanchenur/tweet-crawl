@@ -1,0 +1,28 @@
+发布时间：15m
+正文：$GM cuts 1,000 workers and replaces them with 50 robots (Jun 22nd report)
+
+Reports also show GM is working on a deal with $NVDA on factory robotics.
+
+This is industry validation for robotics, since it likely demonstrates increased opex margins + efficiency from employee automation. 
+
+Especially from companies like $AMZN to General Motors with assembly/warehouse lines that have high headcount.
+
+I think the technology is already here and use cases are already proven. Robotics/Humanoids are just pre-scale right now. 
+
+The wording from large companies is “assistive robotics”… But in all honesty, it’s here to automate away the human workforce and increase profitability.
+
+I don’t think companies want to be paying insurance, salaries, etc. when robots can do a better job, and 24/7, so very sad to see potential job losses in the future from robotics automation.
+
+Whether people like it or not; seems like the inflection point for robotics is here.
+引用：Robotics is next. 
+
+Both deal count and investment amounts are skyrocketing per pitchbook March data (source: a16z)
+
+Good thing is: the same AI DC exposure often has cross-exposure to humanoid ramp.
+
+Like DRAM/NAND with memory (on humanoid inference/storage) or DFB lasers with photonics (FMCW LiDAR vision/sensing).
+
+Right now most exposure is upstream component parts… or programs within large players like$AMZNor$TSLA. 
+
+So global IPO season H2 into 2027 for pure play humanoids/robotics companies is going to be fun.
+评论：93 转发：18 点赞：159 浏览：47,491
