@@ -1,0 +1,76 @@
+发布时间：1h
+正文：Yep! Agility Robotics is currently my favorite humanoid/robotics position.
+
+They're set to be listed on NASDAQ via $CCXI as early as September (per Digitimes).
+
+Just for informational purposes: Their V4 humanoid robot is already operating in sites like Amazon. And have V5 slated for mass production next year (they have a 10,000+ /year capacity).
+
+Investors include Foxconn, $NVDA , $AMZN , Softbank, and now Serenity. 
+
+I've been personally waiting for humanoid exposure for awhile (Agility is set to be the first US pure-play listed one) to the point I was actually planning on investing in Unitree's IPO. 
+
+But I'm glad now I personally have a compelling alternative now since I prefer to invest capital to build up Made in America supply chains (75% of their components are US-sourced from investor desks). 
+
+There are risks assigned to SPACs such as listing delays, or cancellation. But excited to see what happens next with developments.
+
+I do hope this encourages other frontier companies to go public early on.
+引用：跟 Serenity 学美股--公开看好的机器人公司
+
+白毛股神 Serenity分享了她的人形机器人布局思路： 她披露持仓 Agility Robotics、Harmonic Drive 与 Vishay Precision；同时看好宇树科技、绿的谐波与舍弗勒，高盛预测韩国企业将占全球人形机器人生产 30% 份额，赛道极其广阔！
+
+① Agility Robotics (CCXI / 拟 AGLT) - 市值约 25 亿美元
+
+主营业务：双足人形机器人 Digit 研发与制造，采用租赁模式进行商业化部署，背后有英伟达和亚马逊等战略股东支持
+
+供应链卡点：双足步态控制算法的工程化积淀极深，作为整机商是上游零部件需求放量的核心引擎
+
+Serenity的看法：为整机端的首选，个人最大仓位所在，更偏好这类美国本土的人形机器人厂商
+
+② 宇树科技 (拟科创板上市) - 估值约 58 亿美元
+
+主营业务：通用人形机器人及四足机器人开发与销售，科创板首发上市已通过审核
+
+供应链卡点：出货量全球第一，凭借极致供应链本土化性价比跑通了量产与盈利正循环
+
+Serenity的看法：看好但个人未持仓，与 Agility 均为看好的整机厂商，但目前最喜欢的依然是 Agility
+
+③ Harmonic Drive (6324.T / 日本) - 市值约 42 亿美元
+
+主营业务：精密谐波减速机及一体化执行器制造，产品用于机器人、半导体和航天领域
+
+供应链卡点：柔轮形变传动材料配方和超精密加工门槛极高，是关节精密传动的物理性供给瓶颈
+
+Serenity的看法：已建仓持有，看好谐波减速器在整机材料清单中的高价值占比
+
+④ Vishay Precision Group (VPG / 美股) - 市值约 17 亿美元
+
+主营业务：高精度箔电阻、应变片与称重传感器制造，应用于高端工业和国防测量
+
+供应链卡点：箔电阻温漂表现极佳，是灵巧手精密力控和触觉反馈的不可替代上游
+
+Serenity的看法：已建仓持有，看好其传感器业务，并认为其是特斯拉 Optimus 的潜在候选供应商
+
+⑤ 绿的谐波 (688017.SH/ A股) - 市值约 92 亿美元
+
+主营业务：精密减速器及机电一体化关节模块制造，主打高性价比和规模化量产
+
+供应链卡点：实现规模化国产替代，大幅降低谐波减速器成本，是中国整机厂商降本的关键
+
+Serenity的看法：看好但个人未建仓
+
+⑥ 舍弗勒 (SHA0.DE/ 德国) - 市值约 85 亿美元
+
+主营业务：高精密轴承和线性执行器制造，2025 年起将人形机器人业务作为独立单元运营
+
+供应链卡点：百年精密轴承技术平移，开发集成了行星丝杠的模块化线性执行器
+
+Serenity的看法：看好但个人未建仓
+
+额外信息补充：
+
+Serenity@aleabitoreddit还提及其持仓的 AI 数据中心相关标的(如存储)也间接受益于机器人主题。她声明不建议复制仓位，仅分享个人研究思考
+
+ 内存是本月市场的重点关注对象，而像$AAOI这样的光学股票则出现了回调，Serenity 认为最终会看到资金轮动回光子领域，这也是她个人最集中的投资主题
+
+感谢Serenity提供的信息，以上内容仅供学习交流，请DYOR
+评论：118 转发：60 点赞：610 浏览：196,122
