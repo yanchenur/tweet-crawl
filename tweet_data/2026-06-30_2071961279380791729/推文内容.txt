@@ -1,0 +1,14 @@
+发布时间：1h
+正文：There was a pretty funny anecdotal complaint from the Machine Learning $RDDT subreddit.
+
+On $CBRS + OpenAI:
+
+- Needs 1-2K tokens/sec so tries to use Cerebras.
+
+- Claims OpenAI reserved all capacity, making waitlist infinite for everyone else not a hyperscaler.
+
+- Stated alternatives with Groq’s API not accessible to them
+
+Feels bad. But it does show how few players / limited capacity there is for fast inference.
+引用：
+评论：147 转发：21 点赞：283 浏览：119,471
