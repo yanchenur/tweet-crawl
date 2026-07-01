@@ -1,0 +1,46 @@
+发布时间：20m
+正文：Just dropping these 3 slides from Agility Robotics ( $CCXI ) presentations.
+
+For the US robotic program doomposters:
+
+1. “75% of parts” - sourced from the USA
+
+2. Just eyeballing the graph, looks like <$30k BOM mass production.
+
+People were just looking at the ~$145K cost. 
+
+3. 10,000 RoboFab capacity, and they build in Salem/Pittsburgh/Fremont (USA).
+
+So looks like majority US supply chains with targets of <$30K mass production
+
+It does help they’re backed by $AMZN / SoftBank / Foxconn / $NVDA as investors to get this done.
+
+Just personal thoughts as a shareholder in $CCXI (NFA):
+
+My personal biggest fear were US humanoid leaders like $TSLA were just building out their entire supply chains in China.
+
+So US robotics could just be export controlled/halted down the road.
+
+eg. South China Morning Post: ‘Optimus chain’: Chinese suppliers form the backbone of Tesla’s humanoid robot initiative and engaged with hundreds of Chinese component suppliers. 
+
+And that Western companies are not able to lower costs to a competitive level + are forced to use Chinese components. 
+
+I'm still not sure how they're going to do it but if Agility can achieve those mass production targets with that BOM cost in the USA/West. 
+
+It would be a great validation for Made in America US robotics programs. 
+
+IMO the top 5 US humanoid programs right now in terms of commercialization potential are:
+
+1. Tesla Optimus
+2. Figure
+3. Agility Robotics
+4. Boston Dynamics (yeah KR parent)
+5. Apptronik
+
+Tesla is a $1T+ company. Figure is private and valued around ~$39B. Owning Boston Dynamics through Hyundai is a bit messy.
+
+And I’d prefer not to invest in adversarial programs just as a personal preference.
+
+So I’ve been personally excited for Agility to be listed as early as September.
+引用：
+评论：138 转发：16 点赞：265 浏览：50,595
