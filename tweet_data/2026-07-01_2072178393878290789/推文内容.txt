@@ -1,0 +1,27 @@
+发布时间：4m
+正文：Just some of the more interesting news I came across recently:
+
+1. MS: Revised China humanoid shipments to reach 50,000 in 2026 from 14,000u and 28,000u earlier this year.
+
+2. MS: Probe cards and test sockets likely to be priced hike (precious metal hikes + severe shortage of test pin capacity)
+
+3. Capacitor price hikes: MLCC, aluminum electrolytic, tantalum, polymer aluminum, film, and super capacitors from Yageo.
+
+4. $META Vistara architecture: Older DDR4 Memory with CXL as memory expansion
+
+5. OpenAI achieved inference optimization breakthrough that halves costs and reduces GPU requirements. 
+
+6. LTAs are being signed with MLCC after Samsung signed LTA with US big tech customer
+
+7. Grid power bottlenecks triggered 5x increase ($25B) in Brookfield's financing for $BE fuel cells. 
+
+8. Taiwan's chip packaging and testing supply chain includes major OSAT providers such as $ASX , Powertech, Winstek Semiconductor, Chipbond, ChipMOS, and ShunSin. 
+
+Dedicated testing companies include KYEC, Ardentec, and Sigurd Microelectronics, while testing interface suppliers include WinWay, MPI, Keystone Microtech,  Chunghwa Precision, and Hermes Testing Solutions. 
+
+Leadframe makers include Jih Lin Tech, SDI, and CWTC, while major IC substrate suppliers include Unimicron, Kinsus, Nan Ya PCB, and Zhen Ding Tech. (Digitimes) 
+
+- Taiwan-based OSAT providers are raising prices
+- Memory and IC packaging and testing capacity have both become bottlenecks in the semiconductor supply chain
+引用：
+评论：15 转发：2 点赞：45 浏览：14,481
