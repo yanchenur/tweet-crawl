@@ -1,0 +1,36 @@
+发布时间：1h
+正文：Just some public market read through from Chinese private VC markets:
+
+Institutions are pouring funds into physical AI and world models. 
+
+1. Large models / LLMs: ~$23.56B
+2. AI infrastructure + technical layer: ~$15.74B
+3. Embodied intelligence / physical AI: ~$13.36B
+4. AIGC applications: ~$8.79B
+5. Autonomous driving + other Top-20 cluster: ~$3.82B, but not apples-to-apples with the above.
+
+Some notes: 
+- "Early-stage pure foundation-model funding is basically closed".  
+Looks like more funding is just being put into existing leaders and going into World Model companies. My guess is that we'll likely see the same in the US with Anthorpic/OpenAI consolidation. 
+
+- "World models have become the biggest consensus in early-stage investment."
+
+I said months ago 4D AI/World Models would be the most interesting moving forward, and called out $AEVA as potential exposure. But there's not exactly any pure play exposure.  But probably next we'll wait for the next IPOs here in this sector maybe H1 next year. 
+
+- AIGC application sector is the most mature for AI technology commercialization
+
+"Artificial Intelligence Generated Content commercialization is mature but no clear winner yet". 
+
+Makes sense. in the US there's stuff like Grok Imagine, Google Nano Banana, etc. no clear winner too. especially for video. 
+
+_
+
+TLDR: Continued funding into AI infrastructure/semiconductor supply chains. Huge capital rotation influx into physical AI / embodied brain / humanoids + world models from capital inflow. 
+
+Consolidation around leading frontier model companies. 
+
+Personally just validated what I've been focusing on with Agility Robotics and physical AI players (eg. leaderdrive, harmonic, etc) in public markets...
+
+As new potential opportunities in terms of capital rotation. But sadly no world model pure play exposure yet.
+引用：
+评论：146 转发：31 点赞：463 浏览：126,565
