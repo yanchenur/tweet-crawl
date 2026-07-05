@@ -1,0 +1,26 @@
+发布时间：12m
+正文：Just some consolidated updates on memory: 
+
+- $MU leads new 1.5T Yen investment in Hiroshima ~$9.3B. (bullish read through for Disco, Advantest, Resonac, Towa) since capex is localized.
+
+- Morgan Stanley pointed out NAND will continue to be in short supply into 2027 so $SNDK / Kioxia type players are happy alongisde $SIMO and upstream.
+
+- MS remains especially positive on Macronix/Winbond
+
+- UBS expects the average price of DDR contracts in the Q3 2026 to increase 32% | 18% Q4, vs. 17% and 12% est. 
+
+- UBS expects NAND flash to be raised 30% from prev quarter. 
+
+- Samsung reportedly plans 20% DRAM hike Q3. TrendForce recently forecast DRAM contract prices to rise 13 to 18 percent in the third quarter from the previous quarter, so this hike beats expectations.
+
+Something to note:
+
+Lot people see 20%... and don't think it's a lot compared to the 70-80% from previous quarters. 
+
+But if you hike something by 100%, then hike something by 100%, then hike something by 30%, it's a lot more than people estimate since it's compounded. Similar to tracking inflation. 
+
+I've already made projections going into 2028 from the start of the year on my memory names... 
+
+I'm just sitting back and watching things play out through all the "memory optimization" and "they can't keep price hiking like this!" noise.
+引用：
+评论：72 转发：10 点赞：202 浏览：37,671
