@@ -1,0 +1,18 @@
+发布时间：39m
+正文：Looks like there's a high power cylindrical cell / BBU cell shortage (aka: bottleneck):
+
+- Samsung SDI supplies the cells to Simplo, which assembles them into BBUs for $META to $AMZN . 
+- As demand from data centers has increased, production of Samsung SDI's cylindrical cells has also risen sharply.
+- Industry sources said Panasonic, Samsung are experiencing supply shortages for BBU cells.
+
+So main beneficiaries imo look like:
+
+- Samsung SDI (KRX: 006400) / Panasonic Energy  as cleaneset winners
+- Murata (6981) / this keeps showing up everywhere with MLCC and others lol
+- LG Energy (KRX: 373220) / incoming
+
+There's not really much direct US players? But adjacent read through like $VRT , $ETN or $BWA / $ENS . Not quite in my domain emphasis cup of tea though. 
+
+I wouldn't conflate this as all shortages having a massive TAM, but there could be opportunities...
+引用：
+评论：124 转发：20 点赞：252 浏览：71,735
