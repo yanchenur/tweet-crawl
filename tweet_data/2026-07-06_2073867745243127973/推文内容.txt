@@ -1,0 +1,37 @@
+发布时间：1h
+正文：Came across an interesting report from SVRC Research called "State of Robotics 2026", published in April. 
+
+Which listed:
+
+1. Figure AI 
+2. Agility Robotics $CCXI 3. Apptronik 
+4. $TSLA 5. Boston Dynamics
+6. Physical Intelligence 
+7. 1X Technologies
+8. $AMZN Robotics
+9. Covariant
+10. Skild AI 
+
+As the National Champions of the United States robotics program. 
+
+"The United States leads the world in where robotics is heading: Fundation models, OpenAI-style scaling laws applied to action, autonomous vehicles. 
+
+While losing the race on where robotics is shipping today." 
+
+Then it frames:
+
+1. Rare Earths Exposure: from Neodymium for motors to samarium-cobalt for high-temp applications as a critical vulnerability.
+
+2. Actuator dependency. Series elastic actuators, quasi-direct-drive motors, and precision reducers overwhelmingly sourced from Japan, Germany, and China
+
+As one of the main vulnerabilities alongside Manufacturing velocity/data collection cost/regulations. Then their take was: 
+
+"With at least six well-funded US humanoid companies competing for a market still in early formation, we expect at least two significant consolidation events (acquisition or merger) in 2027". 
+
+With Logistics / E-commerce (like $AMZN / $FDX ) and Automotive from $GM to $FORD as being the immediate top use cases for deployment.
+
+I think it's just interesting to see a lot of my points I've been talking about reiterated by research firms. Regardless, I do think it's going to be a major frontier race between the US and China. 
+
+Agility Robotics (which I own), Tesla, Figure, and Apptronik as leaders representing the USA. Competing against Unitree, AGIbot, Ubtech, and others in China.
+引用：
+评论：120 转发：34 点赞：432 浏览：73,925
