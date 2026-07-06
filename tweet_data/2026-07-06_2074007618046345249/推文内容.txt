@@ -1,0 +1,18 @@
+发布时间：17m
+正文：Nomura’s report cites $AXTI and $IQE as the leading players. 
+
+Then regarding ASP updates:
+
+- 2in InP substrate price hike 42-76%
+- 3in InP substrates price hike 78%
+- 2in EML Epiwafer price hike 50-75%
+- 3in CW Epiwafer price hike ~40%+
+- Prices lower domestically in China as expected.
+
+Hyperscalers bottlenecking upstream photonics confirmation validation… on all fronts from pricing, demand, to supply shortages.
+
+My personal expectation was that price hikes would keep going up like $SNDK given ramping optical demand. 
+
+We’ll see if this turns out right given another 2 years of the demand curve.
+引用：
+评论：40 转发：18 点赞：170 浏览：42,234
