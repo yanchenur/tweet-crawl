@@ -1,0 +1,55 @@
+发布时间：2h
+正文：I personally think $SIVE can be the next $LITE . 
+
+In the past few months alone, we've seen:
+
+1. Partnerships with O-Net pushing ELS into mass production
+2. $JBL 1.6T LRO mass production signals with "relatively dramatic moats" for pluggables using Sivers.
+3. $GFS SCALE reference level laser for hyperscalers with pluggable, NPO, CPO.
+-> -> where $AMD and others went to GFS for CPO.
+4. Ayar, which joined $NVDA NVLink for CPO
+-> -> which removed Lumentum/Macom from their website and likely made Sivers their primary laser supplier. 
+-> -> AlChip likely Trainium win from Amazon price placement (Ayar's customer)
+-> -> GUC rack level design in with Ayar.
+-> -> Raised $500m for mass production by AMD, Alchip, Mediatek, and NVIDIA
+5.  ~ $AEVA starting HVM H2 2026.
+6. $POET starting HVM H2 2026 with hyperscaler suppliers like Lumilens ("top 3 hyperscaler initial customer")
+7. TFLN + $SIVE CW Lasers with Lightium
+8. Likely direct relationships with $MRVL Celestial and CPO players like Lightelligence/Lightmatter.
+9. Multiple new undisclosed relationships for pluggables following Jabil in their quarterly transcripts
+
+With new Trendforce reports that $AMD and other hyperscalers are trying to source LTAs for CW laser sources, serving as a direct catalyst for independent CW sources.
+
+So when hyperscaler suppliers from Jabil to O-Net are incentivized to mass produce as many as they can: That's very material for revenue for Sivers relative to current valuations, and it looks like just a waiting game. 
+
+Even in the past week:
+
+- $SIVE raised an oversubscribed institutional round for volume ramp... This is very nuanced since Sivers is fab-lite so it's not going to in-house foundry capex to scale. Likely toward Win Semi and others (they mentioned other partners too), for laser scaling + foundry allocations. 
+
+So this is likely signaling material for revenue ramp is coming. 
+
+- Sivers also mentioned NASDAQ listing completion targeted in the next few quarters (probably H2 2026 or Q1 2027 is my est. timeframe). 
+
+This would fund M&A efforts, since it's impossible with the fundraising environments in local Swedish markets. 
+
+As for becoming the next $LITE :
+
+M&A makes their lasers more valuable, so downstream IP acqusition -> into contract manufacturing like $FN , and others to make the full 1.6T pluggable or optical engines. Is how they get there, since laser array ASP scaling that people are modeling off of, wouldn't command a $60B+   valuations. 
+
+There's going to be a lot of bridge architectures like NPO/pluggables, etc and noise around certain architectural delays in the meantime. 
+
+But markets misunderstand laser companies like $LITE , $SIVE , $AAOI and others are used across different architectures compared to if you just look at certain passive optical components. 
+
+So markets see "CPO delay headlines" algos sell off laser companies that benefit from other architectures. 
+
+Being included in the pluggable 1.6T ramp to CPO scale out (Which Sivers is included in), helps bridge revenue waiting gaps until scale up inflection point H2 2027.  
+
+I'm personally holding long term, since I haven't seen a ~$1.4B company mapping to this many hyperscalers before. 
+
+TLDR:
+- Waiting on volume ramps from different architectures to play out across their hyperscaler supplier mapping
+-> 1.6T LRO/CPO scale out late H2 2026 start into high volume ramp 2027
+-> H2 2027 CPO scale up volume ramp
+- Waiting on NASDAQ listing likely H2 2026/Q1 2027 for M&A efforts to fully take off, unless Sivers get more creative with equity financing in the meantime.
+引用：Hi stock God, you said before$SIVEhas potential to be the next$LITE. What milestones do you expect$SIVEto hit in order to achieve this? Is it simply mass production of lasers for pluggable first and then CPO/NPO? How does M&As play into this?
+评论：160 转发：87 点赞：1,056 浏览：262,665
