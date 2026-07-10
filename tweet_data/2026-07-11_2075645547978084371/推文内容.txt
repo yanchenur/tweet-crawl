@@ -1,0 +1,16 @@
+发布时间：1h
+正文：Regarding $AMZN RNG + OpenAI’s MRC and VCSELs. 
+
+In what appears to be an indirect response on B. Riley's $AAOI sell report regarding optimizations that "flattens networks and cuts transceiver TAM 40-50%".
+
+Rosenblatt TLDR: They've already modeled for this, even though each XPU may use fewer transceivers.
+
+The number of XPUs is growing so quickly that total optical demand should still rise. 
+
+On lasers architectures for CPO: VCSELs are useful as a credible bridge for NPO/short reach. 
+
+Ideal architecture though for CPO is UHP CW over other lasers, and cites Broadcom for that statements. Which happens to supports my core $SIVE thesis. 
+
+I feel like Rosenblatt and I share the same views on a lot of things, I like the way they roll.
+引用：
+评论：212 转发：26 点赞：339 浏览：79,270
