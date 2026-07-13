@@ -1,0 +1,58 @@
+发布时间：2h
+正文：Just a semi recap TLDR:
+
+- $GLW glass bridge per Morgan Stanley has potential, but hard to displace FAU (like FOCI) in short term
+
+- $SPCX Starlink Gen 3 is scaling to 100,000 units (10x prev gen) creating possible capacity constraints for suppliers of switches to CCL.
+
+- PCB supply shortages are projected to persist until 2028, and component shortages/price hikes are already forcing ODMs like Inventec to issue  conservative H2 shipment
+
+- DeepSeek and Zhipu are developing custom ASICs to bypass $NVDA (kinda expected by now). 
+
+- Anthropic has achieved a $30B ARR and is projected to hit >$1B in Q3 profit. Turns out these frontier labs are more profitable than people think. 
+
+- US admin pressured $AAPL to source from $INTC , in exchange for tariff exception. Kinda pressuring alignment away from TSM.  
+
+- $TSM plans a 30x expansion of its Photonic Integrated Circuit (PIC)  capacity by 2028, growing from 500 to 25,000 wafers per month
+
+- Hanmi Semiconductor is entering the CoWoS packaging equipment market
+
+- $NVDA and NTT hosting a conference July 24th to discuss CPO strategies. 
+
+- 5x general NAND flash price hike this year, market size $489B by next year triggered by RAG/inference. Samsung and SK Hynix make emergency fab investments, NAND equipment suppliers go brrrr.  
+
+- Gas turbine bottleneck, 40% supply gap accompanied by staggering 5-year delivery cycles (mega-fabs need them for mass production).
+
+- AI probe card assembly has hit a severe bottleneck apparently. Which is attempted to by solved with things like Innovation Service's machines. 
+
+- Nanya, 79.5% gross margins reported, memory go brr. 4x capex for capacity/advanced packaging. 
+
+- CXMT's STAR Market IPO on July 16, so should bring a lot of attention to memory players in that supply chain. 
+
+- KYEC $1.4B investment into US for $TSM Arizona output test facilities. Lot of these players like $AMKR and others should go brr in 2028.
+
+- $INTC CEO warned last month that helium could hinder the manufacturing costs and delivery times of AI chips
+
+- 3D NAND word lines are shifting from Tungsten to Molybdenum starting at the 375-layer node
+
+- SambaNova secured JPM for AI inference and raised $1B at an $11B valuation.
+
+- HBM prices projections to double in 2027 as $NVDA Rubin platform drives demand.
+
+- $MU provides $500 million in funding to support GlobalWafers' US manufacturing capacity 
+
+- $META 'Iris' will enter mass production in September  via $AVGO and TSMC and Meta aims to double computing power to 14GW by 2027.
+
+- Largan Precision has secured its first CPO FAU order, mass production slated for middle of next year (kinda indication around Foci and others). 
+
+- Samsung and SK Hynix have delayed the implementation of hybrid bonding packaging technology for HBM4 apparently 
+
+- Memory costs (DRAM/NAND) have reached 60% of the BOM for sub-$400 smartphones, causing a severe volume contraction.
+
+- SK Hynix successfully rasied $26.5 billion through a Nasdaq ADR
+
+- $TSLA issued procurement guidelines requiring suppliers to reach weekly production of 1,000 units by September and double to 2,000-2,500 by year end for its 3rd gen Optimus robot. Apparently Alliance Technology and A-Link may be in this supply chain harmonic reducers and vision lenses?
+
+Kinda go through all this stuff every day, but don't wanna be a news reporter so just consolidated stuff I found interesting.
+引用：
+评论：122 转发：65 点赞：830 浏览：167,485
