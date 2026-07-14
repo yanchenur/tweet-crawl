@@ -1,0 +1,34 @@
+发布时间：2h
+正文：So Jensen himself went out to do damage control with $NVDA delays reports apparently:
+
+1. Jensen Huang said no delays: 
+
+- 800V and rack-to-rack optical interconnects is progressing fully in line with the original plan with no material delay. 
+
+- Debunked the rumor that the next-generation flagship, Rubin Ultra, would be delayed until 2028 and said it would be on track to ship next year
+
+- Rack system optimizations, like replacing Kyber with a new design are architectural optimizations, not impacting delivery timelines.
+
+2. On ASIC competition: no loss of market share.
+
+- Talked about how a leading frontier lab that previously relied heavily on internal ASICs has shifted nearly 50% of its compute load to Nvidia
+
+3. On over-reliance on hyperscalers.
+
+- AI frontier labs currently contributing to ~20% of demand.
+- Traditional cloud providers, Nvidia provides Vera CPUs and high-speed networking
+- Sovereign AI
+引用：Apparently there’s a new popular trend to bearpost trillion dollar companies.
+
+Like$NVDAor$TSM.
+
+By finding isolating technical details, then blowing it out of proportions by claiming their whole program is delayed.
+
+-> if the company doesn’t respond, stock prices/sentiment are damaged. 
+
+-> if the company issues a response, they can’t go into detail since supply chains are confidential… but people still doubt them
+
+-> Poster gain more impressions, then does it again with more views the next time.
+
+Don’t quite think this is very healthy, with more folks copying that playbook. Especially around incentive structures.
+评论：71 转发：50 点赞：689 浏览：218,166
