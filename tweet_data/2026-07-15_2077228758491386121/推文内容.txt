@@ -1,0 +1,14 @@
+发布时间：16m
+正文：Well, looks like SLC NAND is forcasted to rise up 120-170% for H2 2026 per Trendforce. 
+
+There's $MU (21%), Kioxia (20%) as largest share, but clearer beneficiaries appears to be:
+
+1. Winbond (2344): ~15% of the SLC NAND market
+2. Macronix (2337): ~11% market share
+3. SkyHigh Memory via Puya Semi: ~14% market share
+
+Given Micron at $1T and others are a bit large relative to SLC NAND TAM. 
+
+(source: Q1 2026 Winbond presentation/Trendforce).
+引用：
+评论：51 转发：12 点赞：154 浏览：37,883

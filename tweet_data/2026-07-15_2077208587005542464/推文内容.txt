@@ -1,0 +1,62 @@
+发布时间：1h
+正文：$AEHR back up +36.4% today off earnings!
+
+2027 guide: $130-$150m (160-200% growth) from 2026 revenue.  Sees opportunity to guide higher (assumes no memory revenue or little to none from newly benchmarked AI customer).
+
+Q4 bookings: $60.7M, effective backlog is $100.6M.
+
+- Lead AI processor wafer-level burn-in customer is significantly ramping their products. 
+
+- Engaged with additional AI processor customers who are evaluating wafer-level burn-in. 
+
+- Benchmark customer, which was a “major supplier of AI accelerators, CPUs and network processors” “exceeded their expectations. 
+
+From management: The potential revenue opportunity from one of these devices is "significant to Aehr". So another benchmark win for potential HVM in the future.
+
+- Wafer level burn-in benchmark with a "global leader in NAND flash completed". Now evaluating a development agreement for HBM/NAND
+
+Seems like $SNDK since there was HBF related discussions from last quarter I think.
+
+- "Our package level burn-in business for AI processors also gained  momentum over the year … from our lead hyperscale customer for Sonoma systems"
+
+- Silicon photonics customer already ramping, newer networking customers     has forecast additional systems  
+
+Basically the amount of global semi companies that map to $AEHR is pretty ridiculous across silicon photonics, memory, AI processors, and others. 
+
+I don’t quite think that $130-$150m guidance is representative of actualized revenue for 2027 if these hyperscalers/semi companies convert to HVM. 
+
+Typically with these types of qualification into HVM players, markets don’t really judge it by current quarter, but what’s to come.  
+
+And it looks very positive so far in terms of reactions...
+
+$116 -> $60 -> $94 all in the span of a month is pretty insane volatility tho, so good to know what you're holding.
+引用：$AEHRlooks extremely promising at ~$1.1B MC. 
+
+Aehr is starting to remind me of an early$TER, mixed with pre-earnings$AAOI.  
+
+If we look at the timeline and speculated customers:
+
+Feb 11th: Sonoma production win for Hyperscaler's AI ASIC processors. (likely$GOOGL,$AMZN,$META).
+
+- Probably Google? Aehr bought Incal, who was speculated to be used by Google for their TPUs. 
+
+Feb 26th: $14 million from AI lead customer (likely$AMD,$NVDA)
+
+- Probably$AMDhere for Instinct MI300/MI400. 
+
+March 3rd: Lead silicon photonics customer for one FOX-XP system (likely$INTCsiph)
+
+- Very likely$INTChas been their lead customer. 
+
+March 31st: Initial order from major new silicon photonics customer (likely$AVGO,$MRVL,$CSCO)
+
+- New customer (rules out Intel), prob one of these transitioning to 800G/1.6T silicon photonics transceivers
+
+(All speculative, very confidential BOM)
+
+Regardless. This timeline is just bottling up for$AEHR.  
+
+Could be next earnings. Or two quarters from now. 
+
+But feels like a matter of time before we see mass orders.
+评论：115 转发：23 点赞：424 浏览：136,140
