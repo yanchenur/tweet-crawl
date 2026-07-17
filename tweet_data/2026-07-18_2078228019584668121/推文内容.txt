@@ -1,0 +1,27 @@
+发布时间：4m
+正文：Thanks, love reading the comments!
+
+Goldman Sachs raised Innolight PT to 2581 RMB. Roughly 163.6% upside from current valuations.
+
+But the largest thing is its 2026–2028 earnings est revision raised by a whopping 65%/108%/119%, based on:
+
+-  Much higher silicon photonics module volumes
+- scale out, scale up, scale across volumes
+- 1.6T/3.2T lifting blended ASP + margins
+- increase in AI capex
+
+This is typically very material read through on the optical sector since:
+
+I tend to think of Innolight as a $TSM (semi capex) type read on how the photonics landscape is doing.
+
+Eg. Higher silicon photonics penetration means more TAM for cw lasers like $SIVE (cw) / SOI wafer demand for $SOI . ASP hikes for future gen is positive for the other optical markers too.
+
+Think my other takeaway outside the report was Innolight stating 800g demand was growing more significantly than expected from their transcript on the 12th. 
+
+Which in turn signals more demand for names like $AAOI to $LITE next earnings.
+
+TLDR: GS gives high earnings projections during a time of massive corrections. 
+
+Fundamentally, broader photonics ecosystem should be happy when it’s ER time.
+引用：long time lurker, just wanted to update you on a recent development: Goldman Sachs updated Innolights price target to an insane 2581 Yuan/share during this downturn. Today's trading session saw the stock trading at 979.46 a share.
+评论：17 转发： 点赞：37 浏览：14,897
