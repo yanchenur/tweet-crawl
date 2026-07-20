@@ -1,0 +1,14 @@
+发布时间：1h
+正文：TBH, casually posting novel information discovery to X is how research should be done. 
+
+Apparently this was #16 on the Smale's list of Mathematical Problems for the Next Century?
+
+Kinda shows that the value generated from AI does not scale linearly with token costs... After seeing this, bears are still probably going to say: 
+
+"B-but where's the profit coming from after AI usage?"
+
+AI + capex is likely going to keep going brrr.
+引用：hello there the jacobian conjecture is false thanx to my close friend akhil for asking about it and my other close friend fable for working during the world cup final
+
+((1+xy)^3 z + y^2 (1+xy) (4+3xy), y + 3 x (1+xy)^2  z + 3 x y^2 (4+3xy), 2 x - 3 x^2 y - x^3 z): \C^3\to \C^3, has jacobian determinant -2, and sends (0, 0, -1/4), (1, -3/2, 13/2), and (-1, 3/2, 13/2) to (-1/4, 0, 0)
+评论：247 转发：18 点赞：313 浏览：97,933
