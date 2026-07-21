@@ -1,0 +1,24 @@
+发布时间：2h
+正文：It's slightly more nuanced. Basically, $AMD SF event is tomorrow, Wed/Thurs (July 22, 23).
+
+From Jefferies client note, AMD is expected to provide additional disclosures around their likely scale-up CPO roadmap + MI500. 
+
+If they confirm CPO route, would positive thematically since it's not just $NVDA forcing the transition. 
+
+As for $SIVE , we'll get a better read if they're directly in AMD supply chains. 
+
+Since right now, it's possible to map it through $GFS (reportedly involved in AMD MI500 CPO work) or AYAR (which AMD invested in). But no formal confirmations. 
+
+So if you're turning in: 
+
+- CPO thematic positive: MI500 explicitly commits to CPO/optical UALink.
+
+- AMD gives details using Ayar Labs or GF SCALE for MI500 CPO:  That would be extremely positive for $SIVE , given they're the upstream laser supplier / reference laser.  
+
+Currently, Blayne Curtis from Jefferies expect AMD to work with $ALAB on UAL and $AVGO on ESUN... but juicy details are here: 
+
+"We are looking for whether AMD commits to a CPO based scale up solution and who supplies the optical engine"
+
+We'll get a broader read through on the supply chain come Wednesday/Thursday, too early to tell today.
+引用：You going to unpack the AMD - GFS news? Looks pretty tasty for sivers…
+评论：81 转发：27 点赞：452 浏览：140,961
