@@ -1,0 +1,30 @@
+发布时间：30m
+正文：$GOOGL now has 950M monthly Gemini users and processes 22B API tokens/min. 
+
+Compared to 750M back in February. 
+
+Absurd growth adding 200 million more users in a few months.  Kinda explains why they ran out of compute, then cut allocations to $META and others. 
+
+Very unlikely AI capex will slow down given.
+引用：$GOOGLreported earnings today:
+
+EPS: $9.11 actual vs $2.91 expected - retail reactions to EPS blowout is kinda just accounting noise, since$SPCX, Anthropic, and others were likely large contributors. 
+
+Revenue: $119.7B actual vs. $116.98B expected
+
+Google Cloud Revenue: $24.77B +82% Y/Y, vs. 63-65% expected ($22.2-$22.6B) - this is a very large beat and most material part so far. 
+
+Cloud Operating Income: ~$8.81B, implying 35.6% margin vs. 32.9% Q1. 
+
+Capex: $44.92B vs ~$44.15B (basically in line).
+
+So initial read through is Google Cloud accelerating growth with expanding margins is genuinely bullish for AI demand.
+
+Their former $180-$190B capex guidance is already extremely large, and as long as we get around these numbers in the earnings call + forward projections... 
+
+Should be good to go for$LITEand the other optics/networking trade. (eg. last earnings, they said DC and networking would be ~40% of capex spend). 
+
+Hyperscaler earnings transcripts are probably the most important thing to pay attention to with the AI capex trade. 
+
+And that should be in 3 minutes.
+评论：133 转发：48 点赞：581 浏览：97,441
