@@ -1,0 +1,14 @@
+发布时间：26m
+正文：From $AMD Advancing AI, channel checks:
+
+Helios networking partners told me they expect AMD to pursue CPO for future generations of Helios scale up networking. 
+
+And expects other hyperscalers + industry to go down the CPO route.
+
+One AI infra executive at a company involved in a hyperscaler CPO programs said they had seen no indication of CPO scale up supply chain delays.
+
+Pushing back on recent 3rd party delay reports.
+
+This was informal commentary, not official AMD or partner guidance.
+引用：
+评论：124 转发：10 点赞：260 浏览：24,211
