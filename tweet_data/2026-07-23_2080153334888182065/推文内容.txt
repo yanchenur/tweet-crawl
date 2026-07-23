@@ -1,0 +1,20 @@
+发布时间：1h
+正文：$INTC and $AMD to sign CPU LTAs with Chinese customers for AI DCs (Reuters). 
+
+- Prices of some CPU products have risen more than 40% in China since the start of the year from sources. 
+
+- Month-on-month increases topping 10% for some products
+
+CPUs were already a bottleneck, following CPU ratios due to AI inference... 
+
+But the broader trend of LTAs seems to be appearing from: 
+
+- Memory, with $MU , Samsung, $SNDK , and SK Hynix signing DRAM/NAND LTAs.
+
+- Photonics, with $LITE , $COHR signing EML LTAs. And recent Trendforce reports that $AMD and hyperscalers are now pursuing CW LTAs. 
+
+And I'm sure there's many more from MLCCs to all the way to substrates. 
+
++1 for the bottleneck investors... hard to be a "bubble that pops" if you have take or pay demand spanning multiple years.
+引用：
+评论：86 转发：37 点赞：464 浏览：100,409
