@@ -1,0 +1,26 @@
+发布时间：3h
+正文：Not exactly for $AAOI (they're working on CPO too, just a little further behind in commercialization).
+
+There's a podcast that featured the $SIVE CEO recently called: "Market Insights: Photonics & AI".
+
+Most interesting take was: 
+
+"Pluggables will be around for the next 10 years".
+
+There's a lot of CPO + RNG/MRC optimization TAM cannablization arguments for pluggables recently, but looks like it's here to stay.
+
+And that there's going to be multiple architecture paths going forward (CEO also NPO alongside CPO as an major opportunity in the next 5 years). 
+
+As for challenges: Vickram stated manufacturing capacity + availability of raw material is the main bottleneck. Likely referencing the existing bottlenecks with upstream CW laser ramp. 
+
+From the podcast, seems like a large focus was on pluggable markets due to larger near-term TAM (which is understandable with $JBL + other players), with CPO being the north star. 
+
+So it might be interesting if $SIVE M&A ambitions were to acquire more pluggable optical transceiver IP, like what $LITE did with Cloud Light.
+
+But TLDR:
+
+Lot of different paths moving forward, pluggable here to stay, CPO seems like North Star for where industry is heading. 
+
+Feels like there's room for every qualified laser supplier given the industry demand is growing faster than what they can all collectively make.
+引用：Is AAOI in trouble if CPO is coming soon?
+评论：138 转发：26 点赞：520 浏览：174,446
