@@ -1,0 +1,31 @@
+发布时间：4h
+正文：Just some takeaways from $META | $MSFT earnings calls:
+
+Microsoft:
+- Expected to be FCF positive in 2027, despite the increase in capex (extremely positive for AI buildout that it's funded by operating income)
+- "Free cash flow was $19.6 billion, reflecting higher capital expenditures"
+- Quartely capex was $41B, roughly 2/3rds were "short lived assets, primarily CPUs and GPUs"
+- Expects capex spend will be over $50 billion for next quarter
+- Capex Guidance at ~$175 billion and 2027 capex roughly the same. Spending plans unchanged and in line. 
+- "Extending the estimated useful life of our data centers from 15 to 25 years"
+- "We will be among the first cloud providers to deploy next generation rack-scale AI infrastructure based on $AMD Helios and $NVDA Vera Rubin"
+- "Customer demand continues to exceed available capacity"
+
+Meta:
+- Capex $130-$145 billion (narrowed range), from $125B-$145B. 
+- Meta is receiving offers at a "significant premium" to what they paid for it (compute scarcity, positive for neoclouds like $IREN / $NBIS )
+- Expects significant portion of compute (like the 1 GW DC in El Paso) to develop internal models. 
+- Meta has multiple ROI-positive uses for additional compute across its core business (internally, not Meta Compute)
+- "Finally, we believe that overall industry capacity is going to remain tight for the foreseeable future" 
+- "The industry has under-built historically for the wave of AI adoption, making existing capacity, including our own, extremely valuable" - Susan Li
+
+TLDR:
+- $MSFT and $GOOGL largely sustaining AI capex buildout while remaining FCF positive or through operating incomes.
+- $META flags available compute materially below demand at least through 2027. And $MSFT also flags compute demand far exceeds supply. 
+- All three hyperscaler capex largely in line with Google hiking capex figures.
+
+AI selloff seems extremely overblown now, hyperscalers continuing capex in line (with Microsoft being FCF positive) or even hiked with $GOOGL . 
+
+Compute scarcity is visible throughout every single hyperscaler ER.
+引用：Thought on meta and Microsoft earnings?
+评论：83 转发：73 点赞：1,122 浏览：319,954
