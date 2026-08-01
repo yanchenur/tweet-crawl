@@ -1,0 +1,12 @@
+发布时间：1h
+正文：$LITE CEO Michael Hurlston at the RAISE Summit warned that the supply gap for InP lasers for AI DCs:
+
+Is facing a more severe supply chain crisis than memory. 
+
+And with Lumentum's 5 InP fabs, shipments would be more than 30%+ below customer demand.
+
+This is especially visible with EMLs today but is already expanding to CW, especially as CPO ramps.
+
+I've always been a fan of the laser chokepoint + bottleneck from $AAOI , $SIVE , $LITE , and $COHR . And glad this thesis is starting to see validation.
+引用：
+评论：45 转发：26 点赞：399 浏览：34,300
