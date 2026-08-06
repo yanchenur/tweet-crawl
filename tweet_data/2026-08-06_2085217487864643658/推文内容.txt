@@ -1,0 +1,17 @@
+发布时间：6m
+正文：The unexpected thing of the week... Was $AEVA becoming a CPO/NPO optical source player. 
+
+For background: $SIVE is viewed as the high confidence CW DFB laser supplier to Aeva (which is known for lidar). 
+
+Today, Aeva reacted with +18.26% AH on news that they signed a JDA with an optical engine player for deployment at a major hyperscaler in H2 2027, production ramp 2028. 
+
+"Optical Connectivity will leverage that foundation along with Aeva’s EXISTING high-volume manufacturing and foundry supply chain" for:
+
+- ELSFP (similar to O-Net/Enablence + $SIVE ), with Sivers as the likely CW laser + potential amplifier supplier
+
+- On-chip integrated light source (likely $SIVE DFB + Aeva PIC on the architecture/integration side)
+
+TLDR: New TAM and a hyperscaler programs for Aeva for CPO/NPO, positive read through for upstream suppliers like $SIVE .
+引用：Do we maybe also have$SIVEinvolved in this$AEVAprojekt?
+Another hyperscaler for#SiversSemiconductors?investors.aeva.com/news-rele…
+评论：15 转发：7 点赞：62 浏览：23,377
