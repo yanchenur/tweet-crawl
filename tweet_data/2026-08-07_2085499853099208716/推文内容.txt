@@ -1,0 +1,63 @@
+发布时间：1h
+正文：Just some TLDR notes on $AAOI earnings:
+
+- Expects full qualification of 1.6T products by their hyperscaler customer within next couple of weeks 
+
+(helpful revenue ramp #2, timelines)
+
+-  Continues to believe that AOI will have the largest AI DC transceiver production capacity in the US
+ 
+(reiterating ambitions during a time when their competitors might get banned)
+
+- Expects facilities toward InP capacity to come online in early 2027 
+
+(timeline FYI in terms of further ramp) 
+
+- Total capacity is approaching 200,000/u per month, EOY 650,000/u per month of 800g/1.6t. EOY 2027, 930,000/u 
+
+(this is the ramp i want to see)
+
+- "increase our manufacturing capacity for our external light source or ELSFP. That's for co-packaged optics or CPO". we anticipate ramping production later this year and into 2027, ultimately culminating in about 400,000 pieces per month in 2028
+
+(need some time to model this into revenue)
+
+- "As we have mentioned before, we've been manufacturing lasers internally for many years. This has allowed us to avoid some of the shortages that  have affected others in the industry"
+
+(vertical integration bull case during CW/EML laser shortages) 
+
+- We believe that in the future, CPO will continue to drive increased demand for high-power lasers
+
+(thesis validation on CPO sector)
+
+- "to our long-term objective of returning non-GAAP gross margins to around 40%"
+
+-  "We ended the second quarter with $508.8 million in total cash equivalents"
+
+I need to double check if the ATM finished or not
+
+- "our ability to deliver revenue in general, and specifically when it  comes to 800G products, is limited by our production capacity right now" "If we could produce more, we could ship more right now"
+
+Demand > Supply validation. 
+
+- "Most of the increased capacity will be in U.S. Even so, let me say that, like I keep emphasizing, that is not good enough for the customer demand. The customer demand is 20%-40% higher."
+
+Unholy photonics demand validation across the whole sector, read through for $LITE , $SIVE / $JBL , and others is amazing. 
+
+- "Not in the next two, three years, especially the demand is so big. Okay?  Even combined AI, $LITE , $COHR , $AVGO all together, it's still very tough to meet the customer demand in the next few years"
+
+More optical sector demand validation. 
+
+- CPO Timelines: "If you're talking about really high volume manufacturer [for CPO market], I would say more like the late Q3 next year" and "We have been working very close with at least five customer"
+
+If you care about current earnings (which I'm not really looking at closely)
+
+Revenue: $191M vs. $190m 
+EPS: $.06 vs. $.02
+
+TLDR: Extraordinary demand across the laser + optical sector read through. Kinda supporting Lumentum CEO statement that laser shortage is worse than memory shortages. 
+
+2027 capacity ramp on track. To map inflection period with timelines, would be around early next year, as stated in their previous earnings call. 
+
+AAOI has the customers now. Limitation is making enough lasers and transceivers.
+引用：
+评论：88 转发：56 点赞：692 浏览：101,754
