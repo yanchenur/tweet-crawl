@@ -1,0 +1,77 @@
+发布时间：2m
+正文：$LITE earnings transcript TLDRs:
+
+- "Our visibility into the timing of CPO scale-up deployments has also sharpened. We remain confident in a demand ramp for our ultra-high-power  laser chips in the second half of calendar 2027"
+
+H2 2027 start of CPO scale up ramp confirmed from Lumentum for their lead customer. 
+
+- "We were recently given our first external light source, or ELS, module purchase for delivery by the second half of calendar 2027" 
+
+ELS industry ramp timelines
+
+- "The NPO opportunity is completely additive for us, significantly increasing the optical TAM."
+
+More TAM for laser chokepoint club
+
+- "we expect the 1.6T transceiver uptake to intensify starting in fiscal Q1 and sustain through calendar 2027."
+
+- "Even in CW, we’ve been surprised at our ability to price up"
+
+Positive pricing power for $SIVE and the other CW laser players. 
+
+- "As a result, we are able to command a nice price premium that we expect  to sustain, as these Chinese if these Chinese guys come online. 
+
+I caution people also, I think people are some of these Chinese laser suppliers are not delivering in the market today, so they have there is no recourse when they throw out these big numbers. We have not seen anything like that to date in terms of their output."
+
+Chinese players are more behind than markets expect, corroborated by $AAOI and $LITE . 
+
+- "We are way behind in our shipments, unfortunately, on high-powered lasers"
+
+"The demand signal has increased, and we are very much further behind relative to our ability to supply."
+
+Extreme demand imbalance for UHP CW laser capacity, continued demand imbalance for EML. Shipping roughly +$50M year end -> $100m+ ("triple digit quarter") into much larger H2 2027 and 2028 scale up demand,.
+
+- "So what we are trying to do, I think, really in the last three months is secure even more substrate supply" (because of demand imbalance), "we found additional substrate help from $AXTI They are a great partner."
+
+Hello InP substrate bottleneck. 
+
+TLDR:
+
+- Lumentum CPO scale up H2 2027 shipments got confirmed, dismissed any "delay" news as market "noise". (one delay report caused so much damage, and it took Nvidia, Lumentum, and all these companies weeks to do damage control). 
+- CW lasers demand ramp second half of 2027
+- Extreme demand imbalance for UHP CW laser capacity surprised Lumentum
+- UHP lasers commands very high margins and is able to price up CW laser capacity. 
+- China further behind in the laser/capacity angle. 
+
+Basically just validated timelines + demand/pricing for Western CW laser players. 
+
+CW laser scarcity is already happening before the main volume ramp even begins...
+引用：$LITEearnings are out, very strong earnings:
+
+Revenue: $1.01B, +24.5% Q/Q, +109.3% Y/Y growth
+vs. ~$984.6M
+Adj. EPS: $3.23 vs. ~$2.95
+Gross Margin (non-gaap): 50.4% / Operating margin (non-gaap) 36.6%
+
+Q1 FY2027 guidance is probably more important:
+
+Revenue: $1.225–1.275B vs. ~$1.16B
+Adj. EPS: $4.05–4.35 vs. ~$3.63
+Operating margin (non-gaap) of 39.5% - 40.5%
+
+In terms of notes: 
+
+Sees: "Increasing demand for ultra-high-power CPO lasers, an initial order for ELS modules" 
+
+- Great read through on other CPO players like$SIVEF,$COHR, and others. (maybe not AAOI since they're missing out on first-gen deployments)
+
+- "Breath of NPO engagements are the first signs that optics are starting  to penetrate in-rack connectivity, significantly upping our optical TAM"
+ 
+- Revenue projections "reaching our target model more than a quarter ahead of schedule."
+
+Extremely strong earnings as expected, you have revenue going from:
+
+$808M -> $1.01B -> $1.25B while operating margin keeps increasing... Just my first impressions. 
+
+Most important thing is the earnings call coming up soon.
+评论：1 转发：3 点赞：26 浏览：11,817
