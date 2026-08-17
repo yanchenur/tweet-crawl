@@ -1,0 +1,32 @@
+发布时间：1h
+正文：I think we're seeing AI server MLCC demand cause an interesting effect... with tightening capacity for consumer/general-purpose MLCCs.
+
+If you get Vietnam flashbacks like I do to $MU / Samsung / SK Hynix -> Legacy DRAM: 
+
+My thesis is we'll see the same thing here maybe late H2, early 2027 with consumer/broad MLCCs. 
+
+From July 6th: 
+
+"the crowding-out effect from AI-oriented high-end MLCC production has begun spilling over into both the automotive and consumer markets." 
+
+July 28th: 
+
+"AI Demand Pushes Japanese and Korean MLCC Suppliers to Record Monthly Shipments; Consumer-Grade Order Spillovers Continue to Surge"
+
+Aug 12: 
+
+As [MLCC] capacity shifts from consumer grades to AI-oriented products... (Trendforce)
+
+Aug 12: 
+
+China's electronics market channel checks found 22µF and 47µF MLCCs (used more broadly) out of stock. Then found and said certain manufacturers had stopped taking orders. 
+
+(for reference: Walsin said high-volume smartphone/PC products such as... 22µF, so it's broader MLCCs)
+
+Obviously Samsung Electro-Mechanics/Murata are main beneficiaries of AI server MLCC ramp. 
+
+But companies with large market share of overall MLCCs like Taiyo Yuden (6976, disclosure: I have positions) with less AI server share, would be a major beneficiary of this. 
+
+Fun part is, we're only in H2 2026, so the next major bottleneck should be fun!
+引用：
+评论：45 转发：18 点赞：307 浏览：84,041
