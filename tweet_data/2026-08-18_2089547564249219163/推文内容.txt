@@ -1,0 +1,22 @@
+发布时间：1h
+正文：So just tracking the MLCC cycle:
+
+ComponentNews classified server MLCCs as “severe” shortage stage, with ETNews reporting:
+
+- Samsung has reached ~40 week lead times for some high capacitance MLCCs per DigiKey’s shipment data.
+
+Earlier this year, broader reports were ~20 weeks, so the AI server MLCC bottleneck keeps growing.
+
+- Murata was ~24 weeks in June. 
+
+July was ~30 weeks. And now some at ~36 weeks. 
+
+This was interesting: 
+
+“The expansion of new production capacity is being postponed from Q4 2026 to 2027”
+
+Doesn’t say which expansion… maybe Murata? But if capacity expansion reportedly gets stalled, the bottleneck should tighten short term.
+
+Lead times are a good way to track demand imbalances.
+引用：
+评论：53 转发：19 点赞：253 浏览：74,235
