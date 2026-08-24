@@ -1,0 +1,15 @@
+发布时间：41m
+正文：$NVDA , following their $20B deal... Announces Groq3 LPX now in full production.
+
+With $NBIS the first to adopt through Nebius token factory.
+
+- 3,400 tok/s in Artificial Analysis benchmarking running Gemma 4 31B, with 100k token context
+- 4x faster responsiveness than the nearest alternative
+
+Thing that caught my attention.. was a former press release after Nvidia's $2B investment into Nebius. 
+
+That it would support their "early adoption of Nvidia's latest generation" architectures. 
+
+Guess we're seeing that special treatment here.
+引用：
+评论：77 转发：20 点赞：309 浏览：62,195
